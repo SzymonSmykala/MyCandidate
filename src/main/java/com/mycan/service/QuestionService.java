@@ -14,4 +14,6 @@ public interface QuestionService {
     Question getQuestion(int theId);
 
     List<Question> getQuestionList();
+
+    void addQuestion(Question question);
 }

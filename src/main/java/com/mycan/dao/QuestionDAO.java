@@ -14,4 +14,6 @@ public interface QuestionDAO {
     Question getQuestion(int theId);
 
     List<Question> getQuestionList();
+
+    void addQuestion(Question question);
 }

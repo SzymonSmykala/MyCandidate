@@ -33,4 +33,10 @@ public class QuestionDAOImpl implements QuestionDAO {
         List<Question> list = session.createQuery("from Question ").list();
         return list;
     }
+
+    @Transactional
+    public void addQuestion(Question question) {
+        Session session = sessionFactory.getCurrentSession();
+        session.save(question);
+    }
 }

@@ -2,16 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aae2f37-82af-4a65-baf2-201b838dad8c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/view/questionsList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/view/addQuestionForm.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/WEB-INF/classes/com/mycan/dao/QuestionDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/WEB-INF/classes/com/mycan/dao/QuestionDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/WEB-INF/classes/com/mycan/dao/QuestionDAOImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/WEB-INF/classes/com/mycan/dao/QuestionDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/WEB-INF/classes/com/mycan/service/QuestionService.class" afterPath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/WEB-INF/classes/com/mycan/service/QuestionService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/WEB-INF/classes/com/mycan/service/QuestionServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/WEB-INF/classes/com/mycan/service/QuestionServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mycan/dao/QuestionDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/mycan/dao/QuestionDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mycan/dao/QuestionDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/mycan/dao/QuestionDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mycan/service/QuestionService.class" afterPath="$PROJECT_DIR$/target/classes/com/mycan/service/QuestionService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mycan/service/QuestionServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/mycan/service/QuestionServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/resources/css/tableStyle.css" afterPath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/resources/css/tableStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAOImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/css/tableStyle.css" afterPath="$PROJECT_DIR$/web/resources/css/tableStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/view/questionsList.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/view/questionsList.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,37 +70,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QuestionDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="questionsList.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="questionsList.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/questionsList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            <state relative-caret-position="287">
+              <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_candidate.questions" pinned="false" current-in-tab="false">
+      <file leaf-file-name="my_candidate.questions" pinned="false" current-in-tab="true">
         <entry file="dbDummy://dbtable:/d772083d/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.questions">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -107,6 +95,61 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="QuestionDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+              <folding>
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addQuestionForm.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/addQuestionForm.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TempController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/TempController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="17" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="tableStyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/resources/css/tableStyle.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -117,46 +160,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="01-create-user.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/01-create-user.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-              <folding>
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="QuestionDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="238">
+              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -165,8 +173,8 @@
       <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+            <state relative-caret-position="355">
+              <caret line="33" column="46" lean-forward="false" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -218,13 +226,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/controller/TempController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/temp.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/questionList.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/resources/css/tableStyle.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/view/addQuestionForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAOImpl.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/web/resources/css/tableStyle.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/questionsList.jsp" />
       </list>
     </option>
@@ -1194,7 +1203,7 @@
       <workItem from="1504814926843" duration="606000" />
       <workItem from="1504851869969" duration="3102000" />
       <workItem from="1504855051305" duration="2132000" />
-      <workItem from="1504858499056" duration="2378000" />
+      <workItem from="1504858499056" duration="4479000" />
     </task>
     <task id="LOCAL-00001" summary="1) Delete Patient added&#10;2) Delete Visit added">
       <created>1504369475588</created>
@@ -1203,11 +1212,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504369475588</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Questions' List View">
+      <created>1504866117059</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1504866117059</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29923000" />
+    <option name="totallyTimeSpent" value="32024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
@@ -1258,7 +1274,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1) Delete Patient added&#10;2) Delete Visit added" />
-    <option name="LAST_COMMIT_MESSAGE" value="1) Delete Patient added&#10;2) Delete Visit added" />
+    <MESSAGE value="Added Questions' List View" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Questions' List View" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1306,7 +1323,7 @@
         <state relative-caret-position="340">
           <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1488,81 +1505,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/TempController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding>
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/d772083d/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.questions">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1582,11 +1529,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/TempController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="17" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="33" column="46" lean-forward="false" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding>
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/addQuestionForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/questionsList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state relative-caret-position="287">
+          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d772083d/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.questions">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

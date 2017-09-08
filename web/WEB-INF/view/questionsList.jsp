@@ -19,6 +19,9 @@
 <div class="table-title">
     <h3>Questions' List</h3>
 </div>
+<h2>
+    <a href="${pageContext.request.contextPath}/admin/addQuestion">Add question</a>
+</h2>
 
 <table cellspacing="0" class="table-fill">
     <tr>

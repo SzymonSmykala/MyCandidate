@@ -1,1 +1,1 @@
-<%response.sendRedirect("temp"); %>
+<%response.sendRedirect("admin/questionsList"); %>

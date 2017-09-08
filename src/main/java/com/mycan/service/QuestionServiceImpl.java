@@ -24,4 +24,8 @@ public class QuestionServiceImpl implements QuestionService {
     public List<Question> getQuestionList() {
         return questionDAO.getQuestionList();
     }
+
+    public void addQuestion(Question question) {
+        questionDAO.addQuestion(question);
+    }
 }

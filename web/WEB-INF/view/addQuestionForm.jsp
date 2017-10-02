@@ -12,6 +12,10 @@
     <title>Add question</title>
 </head>
 <body>
+
+
+
+
 <form:form action="saveQuestion" modelAttribute="question" method="post">
 
     <form:textarea path="questionContent"/>

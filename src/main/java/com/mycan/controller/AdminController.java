@@ -30,7 +30,6 @@ public class AdminController {
 
     @RequestMapping("login")
     public String loginPage(){
-
         return "loginPage";
     }
 
@@ -48,5 +47,34 @@ public class AdminController {
         model.addAttribute("question", question);
         return "addQuestionForm";
     }
+
+    @GetMapping("deleteQuestion")
+    public String deleteQuestion (@RequestParam("questionId") int theId, Model model){
+        questionService.delete(theId);
+        return "redirect:/admin/questionsList";
+    }
+
+
+    @GetMapping("editQuestion")
+    public String editQuestionPage (@RequestParam ("questionId") int theId, Model model){
+
+        Question question = questionService.getQuestion(theId);
+        model.addAttribute("currentQuestion", question);
+
+        return "editQuestionPage";
+    }
+
+    @PostMapping("editQuestionSubmit")
+    public String editQuestionSubmit (@ModelAttribute("currentQuestion") Question question, Model model){
+
+        System.out.println("CONENT: " +  question.getQuestionContent() + "     ID = " + question.getId());
+        questionService.update(question);
+
+        return "redirect:/admin/questionsList";
+    }
+
+
+
+
 
 }

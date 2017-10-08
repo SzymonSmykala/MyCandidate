@@ -28,6 +28,13 @@ public class AdminController {
         return "questionsList";
     }
 
+    @RequestMapping("login")
+    public String loginPage(){
+
+        return "loginPage";
+    }
+
+
     @PostMapping("/saveQuestion")
     public String saveQuestion(@ModelAttribute Question question ){
         //TODO: add question to database

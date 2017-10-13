@@ -9,10 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * Created by Szymon on 08.09.2017.
- */
-
 @Repository
 public class QuestionDAOImpl implements QuestionDAO {
 

@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * Created by Szymon on 08.09.2017.
- */
 @Controller
 @RequestMapping("/admin")
 public class AdminController {
@@ -72,9 +69,4 @@ public class AdminController {
 
         return "redirect:/admin/questionsList";
     }
-
-
-
-
-
 }

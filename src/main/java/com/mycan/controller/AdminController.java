@@ -49,7 +49,7 @@ public class AdminController {
     }
 
     @GetMapping("deleteQuestion")
-    public String deleteQuestion (@RequestParam("questionId") int theId, Model model){
+    public String deleteQuestion (@RequestParam("questionId") int theId){
         questionService.delete(theId);
         return "redirect:/admin/questionsList";
     }
@@ -65,7 +65,7 @@ public class AdminController {
     }
 
     @PostMapping("editQuestionSubmit")
-    public String editQuestionSubmit (@ModelAttribute("currentQuestion") Question question, Model model){
+    public String editQuestionSubmit (@ModelAttribute("currentQuestion") Question question){
 
         System.out.println("CONENT: " +  question.getQuestionContent() + "     ID = " + question.getId());
         questionService.update(question);

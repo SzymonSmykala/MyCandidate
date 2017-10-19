@@ -47,7 +47,6 @@ public class QuestionDAOImpl implements QuestionDAO {
         session.delete(question);
     }
 
-
     @Transactional
     public void update(Question question) {
         Session session = sessionFactory.getCurrentSession();

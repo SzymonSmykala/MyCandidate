@@ -23,7 +23,7 @@ public class QuestionDAOImpl implements QuestionDAO {
     public Question getQuestion(int theId) {
 
         Session session = sessionFactory.getCurrentSession();
-        Question question = session.get(Question.class, 1);
+        Question question = session.get(Question.class, theId);
         return question;
     }
 
@@ -38,5 +38,18 @@ public class QuestionDAOImpl implements QuestionDAO {
     public void addQuestion(Question question) {
         Session session = sessionFactory.getCurrentSession();
         session.save(question);
+    }
+
+    @Transactional
+    public void delete(int theId) {
+        Session session = sessionFactory.getCurrentSession();
+        Question question = session.get(Question.class, theId);
+        session.delete(question);
+    }
+
+    @Transactional
+    public void update(Question question) {
+        Session session = sessionFactory.getCurrentSession();
+        session.update(question);
     }
 }

@@ -28,4 +28,12 @@ public class QuestionServiceImpl implements QuestionService {
     public void addQuestion(Question question) {
         questionDAO.addQuestion(question);
     }
+
+    public void delete(int theId) {
+        questionDAO.delete(theId);
+    }
+
+    public void update(Question question) {
+        questionDAO.update(question);
+    }
 }

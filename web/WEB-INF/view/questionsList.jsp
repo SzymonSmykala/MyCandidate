@@ -27,13 +27,27 @@
     <tr>
         <th>ID</th>
         <th>Content</th>
+        <th>Action</th>
     </tr>
 
     <c:forEach var="question" items="${questionsList}">
 
+        <c:url var="deleteLink" value="deleteQuestion">
+            <c:param name="questionId" value="${question.id}"/>
+        </c:url>
+
+        <c:url var="editLink" value="editQuestion">
+            <c:param name="questionId" value="${question.id}"/>
+        </c:url>
+
         <tr>
             <td class="text-left">${question.id}</td>
             <td class="text-left">${question.questionContent}</td>
+            <td>
+                <a href="${deleteLink}"
+                   onclick="if (!(confirm('Are you sure to delete this question?')))return false">Delete</a>
+                | <a href="${editLink}">EDIT</a>
+            </td>
         </tr>
 
     </c:forEach>

@@ -8,11 +8,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_0_1.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_9_5.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/WEB-INF/classes/com/mycan/entity/Question.class" afterPath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/WEB-INF/classes/com/mycan/entity/Question.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mycan/entity/Question.class" afterPath="$PROJECT_DIR$/target/classes/com/mycan/entity/Question.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/entity/Question.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/entity/Question.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/view/questionsFormForUser.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/view/questionsFormForUser.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -84,7 +80,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="questionsFormForUser.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="questionsFormForUser.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/questionsFormForUser.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="364">
@@ -133,12 +129,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="484">
+              <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -262,9 +260,9 @@
         <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/MysqlCon.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/loginPage.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/questionsList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/entity/Question.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/questionsFormForUser.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -1255,7 +1253,7 @@
       <workItem from="1509727027906" duration="3478000" />
       <workItem from="1509822088583" duration="3790000" />
       <workItem from="1510332035243" duration="4538000" />
-      <workItem from="1510602332461" duration="22000" />
+      <workItem from="1510602332461" duration="117000" />
     </task>
     <task id="LOCAL-00001" summary="1) Delete Patient added&#10;2) Delete Visit added">
       <created>1504369475588</created>
@@ -1306,7 +1304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510335715171</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Created question form">
+      <created>1510602395191</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1510602395191</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1318,7 +1323,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61198000" />
+    <option name="totallyTimeSpent" value="61293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -1376,7 +1381,8 @@
     <MESSAGE value="1) Solved textarea problem&#10;2) Reformated files" />
     <MESSAGE value="Updated DB credential" />
     <MESSAGE value="Added user's question form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added user's question form" />
+    <MESSAGE value="Created question form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created question form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1642,14 +1648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/questionsList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1680,6 +1678,16 @@
         <state relative-caret-position="364">
           <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

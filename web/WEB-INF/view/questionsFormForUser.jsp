@@ -39,7 +39,7 @@
             <td class="text-left">
 
                 <%--<form:radiobutton  path="typeOfAnswer" items=" ${typeOfAnswer}"/>--%>
-
+               <form
             </td>
         </tr>
         </tbody>

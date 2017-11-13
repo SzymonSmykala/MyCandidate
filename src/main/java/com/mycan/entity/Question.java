@@ -15,7 +15,13 @@ public class Question {
     @Column(name = "question_content")
     private String questionContent;
 
+
+
+
+
+
     public Question() {
+
     }
 
     public int getId() {

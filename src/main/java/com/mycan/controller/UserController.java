@@ -20,21 +20,28 @@ import java.util.*;
 @SessionAttributes("answerForm")
 public class UserController {
 
+    private boolean startup = true;
 
     @Autowired
-     QuestionService questionService;
+    QuestionService questionService;
 
-    private static List<Answer> answers  = new ArrayList<Answer>();
+    private static List<Answer> answers = new ArrayList<Answer>();
 
-    static {
-
-       answers.add(new Answer(1, "test?1"));
-       answers.add(new Answer(2, "test?2"));
-    }
+//    static {
+//
+//       answers.add(new Answer(1, "test?1"));
+//       answers.add(new Answer(2, "test?2"));
+//    }
 
     @RequestMapping("/questionForm")
-    public String showQuestionFormForUser(Model model){
+    public String showQuestionFormForUser(Model model) {
 
+        if (startup) {
+            for (Question question : questionService.getQuestionList()) {
+                answers.add(new Answer(question.getId(), question.getQuestionContent()));
+            }
+            startup = false;
+        }
         AnswerForm answerForm = new AnswerForm();
         answerForm.setAnswers(answers);
         model.addAttribute("answerForm", answerForm);
@@ -42,14 +49,13 @@ public class UserController {
     }
 
     @GetMapping("processForm")
-    public String processForm(@ModelAttribute("answerForm") AnswerForm answerForm, Model model){
+    public String processForm(@ModelAttribute("answerForm") AnswerForm answerForm, Model model) {
         List<Answer> answers = answerForm.getAnswers();
-        for (Answer answer: answers){
+        for (Answer answer : answers) {
             System.out.println(answer.getQuestionId() + " " + answer.getQuestionContent() + " " + answer.getAnswer());
         }
         return "questionsFormForUser";
     }
-
 
 
 }

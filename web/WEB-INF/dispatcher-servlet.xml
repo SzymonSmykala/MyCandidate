@@ -40,6 +40,7 @@
         <property name="minPoolSize" value="5" />
         <property name="maxPoolSize" value="20" />
         <property name="maxIdleTime" value="30000" />
+
     </bean>
 
     <!-- Step 2: Setup Hibernate session factory -->
@@ -66,6 +67,7 @@
 
     <!-- Add support for reading web resources: css, images, js, etc ... -->
     <mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
+
 
 
 

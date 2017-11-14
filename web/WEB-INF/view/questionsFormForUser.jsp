@@ -21,33 +21,37 @@
 </h2>
 
 
-
+<form:form method="get" action="processForm" modelAttribute="answerForm" enctype="multipart/form-data">
     <table class="table-fill" cellspacing="0">
         <thread>
             <tr>
+                <th>Id</th>
                 <th>Question</th>
                 <th>Answer</th>
             </tr>
         </thread>
-        <tbody>
 
+        <c:forEach items="${answerForm.answers}" var="answer" varStatus="status">
 
-        <c:forEach var="question" items="${questionList}">
+            <tr>
 
-        <tr>
-            <td class = "text-left">${question.questionContent}</td>
-            <td class="text-left">
+                <td align="center">${status.count}</td>
+                <td>
+                    ${answer.questionContent}
+                    <input name="answers[${status.index}].questionContent" value="${answer.questionContent}"  type="hidden"/></td>
+                <td>
+                    <%--<input name="answers[${status.index}].answer" value="${answer.answer}"/>--%>
+                Yes <input type="radio" name="answers[${status.index}].answer" value="Yes"/>
+                No  <input type="radio" name="answers[${status.index}].answer" value="No"/>
+                </td>
+            </tr>
 
-                <%--<form:radiobutton  path="typeOfAnswer" items=" ${typeOfAnswer}"/>--%>
-               <form
-            </td>
-        </tr>
-        </tbody>
         </c:forEach>
 
+
     </table>
-
-
+    <input type="submit" value="Save"/>
+</form:form>
 
 
 </body>

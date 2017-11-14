@@ -7,8 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6aae2f37-82af-4a65-baf2-201b838dad8c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/starterFiles/sql-scripts/03-create-table-answers-NOT-READY.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/starterFiles/sql-scripts/02-create-table.sql" afterPath="$PROJECT_DIR$/web/starterFiles/sql-scripts/02-create-table-question.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,14 +36,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+            <state relative-caret-position="498">
+              <caret line="55" column="9" lean-forward="false" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
               <folding>
                 <element signature="e#740#748#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02-create-table-question.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/02-create-table-question.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03-create-table-answers-NOT-READY.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/03-create-table-answers-NOT-READY.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,31 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/service/QuestionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="110" column="17" lean-forward="false" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="questionsFormForUser.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/questionsFormForUser.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -162,6 +164,7 @@
       <find>editQue</find>
       <find>shelve</find>
       <find>re</find>
+      <find>questio</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,8 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/view/visitsList.jsp" />
-        <option value="$PROJECT_DIR$/src/com/example/myclinic/controller/VisitController.java" />
         <option value="$PROJECT_DIR$/src/com/example/myclinic/service/VisitService.java" />
         <option value="$PROJECT_DIR$/src/com/example/myclinic/service/VisitServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/example/myclinic/dao/VisitDAO.java" />
@@ -232,6 +233,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/questionsFormForUser.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/sasa.sql" />
+        <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/03-create-table-answers-NOT-READY.sql" />
       </list>
     </option>
   </component>
@@ -394,12 +397,13 @@
     <property name="SearchEverywhereHistoryKey" value="pom&#9;FILE&#9;file://C:/Users/Szymon/IdeaProjects/MyCandidateGit/pom.xml" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Szymon\Desktop\mycandup\web\starterFiles\sql-scripts" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.mycan.dao" />
       <recent name="com.mycan.test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Szymon\IdeaProjects\MyCandidateGitt\web\starterFiles\sql-scripts" />
+      <recent name="C:\Users\Szymon\Desktop\mycandup\web\starterFiles\sql-scripts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1093,7 +1097,7 @@
       <workItem from="1510602332461" duration="117000" />
       <workItem from="1510646752846" duration="1992000" />
       <workItem from="1510677343723" duration="11000" />
-      <workItem from="1510692135089" duration="3966000" />
+      <workItem from="1510692135089" duration="4577000" />
     </task>
     <task id="LOCAL-00001" summary="1) Delete Patient added&#10;2) Delete Visit added">
       <created>1504369475588</created>
@@ -1165,7 +1169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510695788628</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Changed questions in user survey to load them from DB">
+      <created>1510696150103</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1510696150103</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1177,7 +1188,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71378000" />
+    <option name="totallyTimeSpent" value="71989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
@@ -1237,7 +1248,8 @@
     <MESSAGE value="Created question form" />
     <MESSAGE value="Added user's question form" />
     <MESSAGE value="Added yes/no radiobuttons to user survey" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added yes/no radiobuttons to user survey" />
+    <MESSAGE value="Changed questions in user survey to load them from DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed questions in user survey to load them from DB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1257,7 +1269,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myclinic/controller/VisitController.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1341,13 +1352,6 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/3dd2c57a/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.questions" />
-    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/02-create-table.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="49" lean-forward="false" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/testdb/TestDbServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1511,18 +1515,34 @@
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/questionsFormForUser.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        <state relative-caret-position="498">
+          <caret line="55" column="9" lean-forward="false" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
           <folding>
             <element signature="e#740#748#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/02-create-table-question.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/03-create-table-answers-NOT-READY.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

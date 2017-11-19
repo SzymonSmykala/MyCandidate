@@ -1,8 +1,10 @@
 package com.mycan.controller;
 
+import com.mycan.entity.Answer;
 import com.mycan.otherclasses.AnswerNE;
 import com.mycan.otherclasses.AnswerForm;
 import com.mycan.entity.Question;
+import com.mycan.service.AnswerService;
 import com.mycan.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,6 +25,9 @@ public class UserController {
 
     @Autowired
     QuestionService questionService;
+
+    @Autowired
+    AnswerService answerService;
 
     private static List<AnswerNE> answerNES = new ArrayList<AnswerNE>();
 
@@ -52,6 +57,7 @@ public class UserController {
         List<AnswerNE> answerNES = answerForm.getAnswerNES();
         for (AnswerNE answerNE : answerNES) {
             System.out.println(answerNE.getQuestionId() + " " + answerNE.getQuestionContent() + " " + answerNE.getAnswer());
+           
         }
 
         return "questionsFormForUser";

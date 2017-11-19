@@ -4,12 +4,11 @@ import com.mycan.entity.Answer;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
 
-/**
- * Created by Szymon on 19.11.2017.
- */
+@Repository
 public class AnswerDAOImpl implements AnswerDAO {
 
     @Autowired
@@ -19,7 +18,7 @@ public class AnswerDAOImpl implements AnswerDAO {
     public Answer getAnswer(int theId) {
         Session session = sessionFactory.getCurrentSession();
         Answer answer = session.get(Answer.class, theId);
-        return null;
+        return answer;
     }
 
     @Transactional

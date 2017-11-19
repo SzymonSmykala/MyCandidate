@@ -1,15 +1,12 @@
 package com.mycan.entity;
 
-import org.junit.jupiter.api.Tags;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-/**
- * Created by Szymon on 19.11.2017.
- */
+
 @Entity
 @Table(name = "answers")
 public class Answer {
@@ -62,4 +59,6 @@ public class Answer {
     public void setAnswerContent(String answerContent) {
         this.answerContent = answerContent;
     }
+
+
 }

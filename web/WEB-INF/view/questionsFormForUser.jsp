@@ -31,18 +31,18 @@
             </tr>
         </thread>
 
-        <c:forEach items="${answerForm.answers}" var="answer" varStatus="status">
+        <c:forEach items="${answerForm.answerNES}" var="answerNE" varStatus="status">
 
             <tr>
 
                 <td align="center">${status.count}</td>
                 <td>
-                    ${answer.questionContent}
-                    <input name="answers[${status.index}].questionContent" value="${answer.questionContent}"  type="hidden"/></td>
+                    ${answerNE.questionContent}
+                    <input name="answerNES[${status.index}].questionContent" value="${answerNE.questionContent}"  type="hidden"/></td>
                 <td>
-                    <%--<input name="answers[${status.index}].answer" value="${answer.answer}"/>--%>
-                Yes <input type="radio" name="answers[${status.index}].answer" value="Yes"/>
-                No  <input type="radio" name="answers[${status.index}].answer" value="No"/>
+                    <%--<input name="answerNES[${status.index}].answerNE" value="${answerNE.answerNE}"/>--%>
+                Yes <input type="radio" name="answerNES[${status.index}].answerNE" value="Yes"/>
+                No  <input type="radio" name="answerNES[${status.index}].answerNE" value="No"/>
                 </td>
             </tr>
 

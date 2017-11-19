@@ -17,14 +17,14 @@ USE `my_candidate`;
 -- Table structure for table `customer`
 --
 
-DROP TABLE IF EXISTS `answers`;
+DROP TABLE IF EXISTS `answerNES`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `answers` (
+CREATE TABLE `answerNES` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `question_id` int(11) NOT NULL,
-  `answer` varchar(45) NOT NULL,
+  `answerNE` varchar(45) NOT NULL,
 
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
@@ -32,15 +32,15 @@ CREATE TABLE `answers` (
 
 
 
-LOCK TABLES `answers` WRITE;
-/*!40000 ALTER TABLE `answers` DISABLE KEYS */;
+LOCK TABLES `answerNES` WRITE;
+/*!40000 ALTER TABLE `answerNES` DISABLE KEYS */;
 
-INSERT INTO `answers` VALUES
+INSERT INTO `answerNES` VALUES
 	(1,1,1,'Yes'),
 	(2,1,2,'No');
 
 
-/*!40000 ALTER TABLE `answers` ENABLE KEYS */;
+/*!40000 ALTER TABLE `answerNES` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

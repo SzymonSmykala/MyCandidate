@@ -1,13 +1,12 @@
 package com.mycan.controller;
 
-import com.mycan.entity.Answer;
-import com.mycan.entity.AnswerForm;
+import com.mycan.otherclasses.AnswerNE;
+import com.mycan.otherclasses.AnswerForm;
 import com.mycan.entity.Question;
 import com.mycan.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -25,12 +24,12 @@ public class UserController {
     @Autowired
     QuestionService questionService;
 
-    private static List<Answer> answers = new ArrayList<Answer>();
+    private static List<AnswerNE> answerNES = new ArrayList<AnswerNE>();
 
 //    static {
 //
-//       answers.add(new Answer(1, "test?1"));
-//       answers.add(new Answer(2, "test?2"));
+//       answerNES.add(new AnswerNE(1, "test?1"));
+//       answerNES.add(new AnswerNE(2, "test?2"));
 //    }
 
     @RequestMapping("/questionForm")
@@ -38,22 +37,23 @@ public class UserController {
 
         if (startup) {
             for (Question question : questionService.getQuestionList()) {
-                answers.add(new Answer(question.getId(), question.getQuestionContent()));
+                answerNES.add(new AnswerNE(question.getId(), question.getQuestionContent()));
             }
             startup = false;
         }
         AnswerForm answerForm = new AnswerForm();
-        answerForm.setAnswers(answers);
+        answerForm.setAnswerNES(answerNES);
         model.addAttribute("answerForm", answerForm);
         return "questionsFormForUser";
     }
 
     @GetMapping("processForm")
     public String processForm(@ModelAttribute("answerForm") AnswerForm answerForm, Model model) {
-        List<Answer> answers = answerForm.getAnswers();
-        for (Answer answer : answers) {
-            System.out.println(answer.getQuestionId() + " " + answer.getQuestionContent() + " " + answer.getAnswer());
+        List<AnswerNE> answerNES = answerForm.getAnswerNES();
+        for (AnswerNE answerNE : answerNES) {
+            System.out.println(answerNE.getQuestionId() + " " + answerNE.getQuestionContent() + " " + answerNE.getAnswer());
         }
+
         return "questionsFormForUser";
     }
 

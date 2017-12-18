@@ -36,7 +36,6 @@ public class AdminController {
 
     @PostMapping("/saveQuestion")
     public String saveQuestion(@ModelAttribute Question question ){
-        //TODO: add question to database
         questionService.addQuestion(question);
         return "redirect:questionsList";
     }

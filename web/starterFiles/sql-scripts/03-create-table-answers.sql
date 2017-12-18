@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `my_candidate` /*!40100 DEFAULT CHARACTER SET latin1 */;
+SELECT * FROM my_candidate.answers;CREATE DATABASE  IF NOT EXISTS `my_candidate` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `my_candidate`;
 
 
@@ -17,30 +17,32 @@ USE `my_candidate`;
 -- Table structure for table `customer`
 --
 
-DROP TABLE IF EXISTS `questions`;
+DROP TABLE IF EXISTS `answers`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `questions` (
+CREATE TABLE `answers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `question_content` varchar(45) DEFAULT NULL,
+  `user_id` int(11) NOT NULL,
+  `question_id` int(11) NOT NULL,
+  `answer_content` varchar(45) NOT NULL,
 
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (question_id) REFERENCES Questions(Id)
+
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `patient`
---
-
-LOCK TABLES `questions` WRITE;
-/*!40000 ALTER TABLE `questions` DISABLE KEYS */;
-
-INSERT INTO `questions` VALUES
-	(1,'What about no?'),
-	(2,'How was the day?');
 
 
-/*!40000 ALTER TABLE `questions` ENABLE KEYS */;
+LOCK TABLES `answers` WRITE;
+/*!40000 ALTER TABLE `answers` DISABLE KEYS */;
+
+INSERT INTO `answers` VALUES
+  (1,1,1,'Yes'),
+  (2,1,2,'No');
+
+
+/*!40000 ALTER TABLE `answers` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

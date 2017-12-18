@@ -2,9 +2,6 @@ package com.mycan.entity;
 
 import javax.persistence.*;
 
-/**
- * Created by Szymon on 08.09.2017.
- */
 @Entity
 @Table(name = "questions")
 public class Question {
@@ -15,7 +12,10 @@ public class Question {
     @Column(name = "question_content")
     private String questionContent;
 
+
+
     public Question() {
+
     }
 
     public int getId() {

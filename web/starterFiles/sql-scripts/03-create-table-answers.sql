@@ -24,7 +24,7 @@ CREATE TABLE `answers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `question_id` int(11) NOT NULL,
-  `answerNE` varchar(45) NOT NULL,
+  `answer_content` varchar(45) NOT NULL,
 
   PRIMARY KEY (`id`),
   FOREIGN KEY (question_id) REFERENCES Questions(Id)

@@ -1,6 +1,8 @@
 package com.mycan.controller;
 
+import com.mycan.entity.Answer;
 import com.mycan.entity.Question;
+import com.mycan.service.AnswerService;
 import com.mycan.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,6 +19,8 @@ public class TempController {
     @Autowired
     QuestionService questionService;
 
+    @Autowired
+    AnswerService answerService;
 
     @RequestMapping("/temp")
     public String tempPage(Model model){
@@ -27,6 +31,12 @@ public class TempController {
         return "temp";
     }
 
+    @RequestMapping("/aTest")
+    public String answerTest(){
+        int theId = 1;
+        System.out.printf(String.valueOf(answerService.getAnswer(theId)));
+        return "temp";
+    }
 
 
 

@@ -1,4 +1,4 @@
-SELECT * FROM my_candidate.answers;CREATE DATABASE  IF NOT EXISTS `my_candidate` /*!40100 DEFAULT CHARACTER SET latin1 */;
+SELECT * FROM my_candidate.answers;CREATE DATABASE  IF NOT EXISTS `my_candidate` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `my_candidate`;
 
 

@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `my_candidate` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE  IF NOT EXISTS `my_candidate` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `my_candidate`;
 
 

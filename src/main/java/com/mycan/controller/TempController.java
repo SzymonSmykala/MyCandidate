@@ -9,6 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.List;
+
 /**
  * Created by Szymon on 08.09.2017.
  */
@@ -33,8 +35,11 @@ public class TempController {
 
     @RequestMapping("/aTest")
     public String answerTest(){
-        int theId = 1;
-        System.out.printf(String.valueOf(answerService.getAnswer(theId)));
+        int theId = 2;
+        List<Answer> answerList = answerService.getAnswersByUserId(theId);
+        for (Answer answer: answerList){
+            System.out.println(answer);
+        }
         return "temp";
     }
 

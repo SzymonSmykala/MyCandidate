@@ -31,11 +31,6 @@ public class UserController {
 
     private static List<AnswerNE> answerNES = new ArrayList<AnswerNE>();
 
-//    static {
-//
-//       answerNES.add(new AnswerNE(1, "test?1"));
-//       answerNES.add(new AnswerNE(2, "test?2"));
-//    }
 
     @RequestMapping("/questionForm")
     public String showQuestionFormForUser(Model model) {

@@ -18,9 +18,7 @@ public class AnswerDAOImpl implements AnswerDAO {
     @Transactional
     public Answer getAnswer(int theId) {
         Session session = sessionFactory.getCurrentSession();
-
         Answer answer = session.get(Answer.class, theId);
-
         return answer;
     }
 
@@ -28,5 +26,12 @@ public class AnswerDAOImpl implements AnswerDAO {
     public void setAnswer(Answer answer) {
         Session session = sessionFactory.getCurrentSession();
         session.save(answer);
+    }
+
+    @Transactional
+    public List<Answer> getAnswersByUserId(int userId) {
+        Session session = sessionFactory.getCurrentSession();
+        List<Answer> answersList = session.createQuery("from Answer a WHERE a.userId = " + userId).list();
+        return answersList;
     }
 }

@@ -1,7 +1,6 @@
 package com.mycan.controller;
 
-import com.mycan.entity.Answer;
-import com.mycan.otherclasses.AnswerNE;
+import com.mycan.otherclasses.AnswerWithQuestion;
 import com.mycan.otherclasses.AnswerForm;
 import com.mycan.entity.Question;
 import com.mycan.service.AnswerService;
@@ -29,7 +28,7 @@ public class UserController {
     @Autowired
     AnswerService answerService;
 
-    private static List<AnswerNE> answerNES = new ArrayList<AnswerNE>();
+    private static List<AnswerWithQuestion> answerWithQuestionList = new ArrayList<AnswerWithQuestion>();
 
 
     @RequestMapping("/questionForm")
@@ -37,21 +36,23 @@ public class UserController {
 
         if (startup) {
             for (Question question : questionService.getQuestionList()) {
-                answerNES.add(new AnswerNE(question.getId(), question.getQuestionContent()));
+                AnswerWithQuestion answerWithQuestion = new AnswerWithQuestion(question.getId(), question.getQuestionContent());
+                answerWithQuestion.setAnswer("YeSSSS");
+                answerWithQuestionList.add(answerWithQuestion);
             }
             startup = false;
         }
         AnswerForm answerForm = new AnswerForm();
-        answerForm.setAnswerNES(answerNES);
+        answerForm.setAnswerWithQuestions(answerWithQuestionList);
         model.addAttribute("answerForm", answerForm);
         return "questionsFormForUser";
     }
 
     @GetMapping("processForm")
     public String processForm(@ModelAttribute("answerForm") AnswerForm answerForm, Model model) {
-        List<AnswerNE> answerNES = answerForm.getAnswerNES();
-        for (AnswerNE answerNE : answerNES) {
-            System.out.println(answerNE.getQuestionId() + " " + answerNE.getQuestionContent() + " " + answerNE.getAnswer());
+        List<AnswerWithQuestion> answerWithQuestions = answerForm.getAnswerWithQuestions();
+        for (AnswerWithQuestion answerWithQuestion : answerWithQuestions) {
+            System.out.println(answerWithQuestion.getQuestionId() + " " + answerWithQuestion.getQuestionContent() + " " + answerWithQuestion.getAnswer());
            
         }
 

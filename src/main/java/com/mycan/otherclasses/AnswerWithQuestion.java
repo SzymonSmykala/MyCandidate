@@ -1,6 +1,6 @@
 package com.mycan.otherclasses;
 
-public class AnswerNE {
+public class AnswerWithQuestion {
 
 
 
@@ -9,7 +9,7 @@ public class AnswerNE {
     private String answer;
 
 
-    public AnswerNE(int questionId, String questionContent) {
+    public AnswerWithQuestion(int questionId, String questionContent) {
         this.questionId = questionId;
         this.questionContent = questionContent;
         answer = new String();
@@ -23,10 +23,10 @@ public class AnswerNE {
         this.questionContent = questionContent;
     }
 
-    public AnswerNE() {
+    public AnswerWithQuestion() {
     }
 
-    public AnswerNE(int questionId) {
+    public AnswerWithQuestion(int questionId) {
         this.questionId = questionId;
     }
 

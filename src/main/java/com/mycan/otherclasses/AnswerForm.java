@@ -4,13 +4,13 @@ import java.util.List;
 
 public class AnswerForm {
 
-    private List<AnswerNE> answerNES;
+    private List<AnswerWithQuestion> answerWithQuestions;
 
-    public List<AnswerNE> getAnswerNES() {
-        return answerNES;
+    public List<AnswerWithQuestion> getAnswerWithQuestions() {
+        return answerWithQuestions;
     }
 
-    public void setAnswerNES(List<AnswerNE> answerNES) {
-        this.answerNES = answerNES;
+    public void setAnswerWithQuestions(List<AnswerWithQuestion> answerWithQuestions) {
+        this.answerWithQuestions = answerWithQuestions;
     }
 }

@@ -53,27 +53,15 @@ public class UserController {
     @GetMapping("processForm")
     public String processForm(@ModelAttribute("answerForm") AnswerForm answerForm, Model model) {
         List<AnswerWithQuestion> answerWithQuestions = answerForm.getAnswerWithQuestions();
-        for (AnswerWithQuestion answerWithQuestion : answerWithQuestions) {
-            System.out.println(answerWithQuestion.getQuestionId() + " " + answerWithQuestion.getQuestionContent() + " " + answerWithQuestion.getAnswer());
-           
-        }
         model.addAttribute("answerForm", answerForm);
-
-        //Create AnswerList
-        System.out.println("KURWO CHAMSKA");
         List<Answer> submitList = new ArrayList<Answer>();
-        for (AnswerWithQuestion answerWithQuestion: answerWithQuestions){
+        for (AnswerWithQuestion answerWithQuestion : answerWithQuestions) {
             //TODO: set real userID
+            //Submit to DB with userId = 0
             Answer answer = new Answer(0, answerWithQuestion.getAnswer(),
                     questionService.getQuestion(answerWithQuestion.getQuestionId()));
-
-            System.out.println(answer + "   question: " + answer.getQuestion().getQuestionContent()
-            + " id " + answer.getQuestion().getId());
-             submitList.add(answer);
+            submitList.add(answer);
         }
-
-        //Submit to DB with userId = 0
-
         answerService.submitUserAnswers(submitList);
 
         return "FormForUserConfirmationPage";

@@ -10,7 +10,7 @@
 
 <form:form method="get" action="processForm" modelAttribute="answerForm" enctype="multipart/form-data">
 
-    //Wszytko do bazy zapisuje się narazie z użytkownikiem o ID = 0
+    //Everything saves in DB with userId = 0
     <table>
         <tr>
             <td>Question</td>
@@ -23,7 +23,7 @@
                 <td>
                         ${answerWithQuestion.questionContent}
                 <td>
-                    ${answerWithQuestion.answer}
+                        ${answerWithQuestion.answer}
                 </td>
             </tr>
 

@@ -1,10 +1,7 @@
 package com.mycan.entity;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 
 @Entity
@@ -13,20 +10,27 @@ public class Answer {
 
     @Id
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     @Column(name = "user_id")
     private int userId;
 
-    @Column(name = "question_id")
-    private int questionId;
+
+//    @Column(name = "question_id")
+//    private int questionId;
 
     @Column(name = "answer_content")
     private String answerContent;
 
+    @OneToOne(cascade = CascadeType.REMOVE)
+    @JoinColumn(name = "question_id")
+    private Question question;
+
 
     public Answer() {
     }
+
 
     public int getId() {
         return id;
@@ -44,13 +48,7 @@ public class Answer {
         this.userId = userId;
     }
 
-    public int getQuestionId() {
-        return questionId;
-    }
 
-    public void setQuestionId(int questionId) {
-        this.questionId = questionId;
-    }
 
     public String getAnswerContent() {
         return answerContent;
@@ -60,13 +58,17 @@ public class Answer {
         this.answerContent = answerContent;
     }
 
-    @Override
-    public String toString() {
-        return "Answer{" +
-                "id=" + id +
-                ", userId=" + userId +
-                ", questionId=" + questionId +
-                ", answerContent='" + answerContent + '\'' +
-                '}';
+    public Answer(int userId, String answerContent, Question question) {
+        this.userId = userId;
+        this.answerContent = answerContent;
+        this.question = question;
+    }
+
+    public Question getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(Question question) {
+        this.question = question;
     }
 }

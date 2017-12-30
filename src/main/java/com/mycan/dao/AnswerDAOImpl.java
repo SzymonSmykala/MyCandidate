@@ -34,4 +34,12 @@ public class AnswerDAOImpl implements AnswerDAO {
         List<Answer> answersList = session.createQuery("from Answer a WHERE a.userId = " + userId).list();
         return answersList;
     }
+
+    @Transactional
+    public void submitUserAnswers(List<Answer> submitList) {
+        Session session = sessionFactory.getCurrentSession();
+        for (Answer answer: submitList){
+            session.save(answer);
+        }
+    }
 }

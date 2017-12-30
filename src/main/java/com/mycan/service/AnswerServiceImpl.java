@@ -27,4 +27,8 @@ public class AnswerServiceImpl implements AnswerService {
     public List<Answer> getAnswersByUserId(int userId) {
         return answerDAO.getAnswersByUserId(userId);
     }
+
+    public void submitUserAnswers(List<Answer> submitList) {
+        answerDAO.submitUserAnswers(submitList);
+    }
 }

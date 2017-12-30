@@ -1,5 +1,6 @@
 package com.mycan.controller;
 
+import com.mycan.entity.Answer;
 import com.mycan.otherclasses.AnswerWithQuestion;
 import com.mycan.otherclasses.AnswerForm;
 import com.mycan.entity.Question;
@@ -28,6 +29,7 @@ public class UserController {
     @Autowired
     AnswerService answerService;
 
+
     private static List<AnswerWithQuestion> answerWithQuestionList = new ArrayList<AnswerWithQuestion>();
 
 
@@ -37,7 +39,7 @@ public class UserController {
         if (startup) {
             for (Question question : questionService.getQuestionList()) {
                 AnswerWithQuestion answerWithQuestion = new AnswerWithQuestion(question.getId(), question.getQuestionContent());
-                answerWithQuestion.setAnswer("YeSSSS");
+                answerWithQuestion.setAnswer("No answer");
                 answerWithQuestionList.add(answerWithQuestion);
             }
             startup = false;
@@ -55,8 +57,26 @@ public class UserController {
             System.out.println(answerWithQuestion.getQuestionId() + " " + answerWithQuestion.getQuestionContent() + " " + answerWithQuestion.getAnswer());
            
         }
+        model.addAttribute("answerForm", answerForm);
 
-        return "questionsFormForUser";
+        //Create AnswerList
+        System.out.println("KURWO CHAMSKA");
+        List<Answer> submitList = new ArrayList<Answer>();
+        for (AnswerWithQuestion answerWithQuestion: answerWithQuestions){
+            //TODO: set real userID
+            Answer answer = new Answer(0, answerWithQuestion.getAnswer(),
+                    questionService.getQuestion(answerWithQuestion.getQuestionId()));
+
+            System.out.println(answer + "   question: " + answer.getQuestion().getQuestionContent()
+            + " id " + answer.getQuestion().getId());
+             submitList.add(answer);
+        }
+
+        //Submit to DB with userId = 0
+
+        answerService.submitUserAnswers(submitList);
+
+        return "FormForUserConfirmationPage";
     }
 
 

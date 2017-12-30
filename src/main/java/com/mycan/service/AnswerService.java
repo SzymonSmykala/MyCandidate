@@ -13,4 +13,5 @@ public interface AnswerService {
     public void setAnswer(Answer answer);
     List<Answer> getAnswersByUserId(int userId);
 
+    void submitUserAnswers(List<Answer> submitList);
 }

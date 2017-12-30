@@ -12,4 +12,6 @@ public interface AnswerDAO {
     Answer getAnswer(int theId);
     void setAnswer(Answer answer);
     List<Answer> getAnswersByUserId(int userId);
+
+    void submitUserAnswers(List<Answer> submitList);
 }

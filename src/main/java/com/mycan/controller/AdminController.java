@@ -73,6 +73,11 @@ public class AdminController {
     }
 
 
+    @RequestMapping("addUser")
+    public String addUser(){
+        return "addUserForm";
+    }
+
 
 
 

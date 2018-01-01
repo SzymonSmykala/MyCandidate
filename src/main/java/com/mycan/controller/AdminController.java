@@ -1,7 +1,9 @@
 package com.mycan.controller;
 
 import com.mycan.entity.Question;
+import com.mycan.entity.User;
 import com.mycan.service.QuestionService;
+import com.mycan.service.UserService;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,6 +21,9 @@ public class AdminController {
 
     @Autowired
     QuestionService questionService;
+
+    @Autowired
+    UserService userService;
 
     @RequestMapping("questionsList")
     public String questionsList(Model model) {
@@ -73,7 +78,21 @@ public class AdminController {
     }
 
 
+    @RequestMapping("addUser")
+    public String addUser(Model model){
 
+        User user = new User();
+        model.addAttribute("user", user);
+        return "addUserForm";
+    }
+
+    @PostMapping("addUserSubmit")
+    public String addUserSubmit(@ModelAttribute("user") User user){
+        //TODO: add user to DB
+        userService.addUser(user);
+        System.out.println(user);
+        return "redirect:/admin/addUser";
+    }
 
 
 }

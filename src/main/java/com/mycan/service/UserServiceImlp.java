@@ -1,5 +1,8 @@
 package com.mycan.service;
 
+import com.mycan.dao.UserDAO;
+import com.mycan.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -7,4 +10,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserServiceImlp implements UserService {
+
+    @Autowired
+    UserDAO userDAO;
+
+    public void addUser(User user) {
+        userDAO.addUser(user);
+    }
 }

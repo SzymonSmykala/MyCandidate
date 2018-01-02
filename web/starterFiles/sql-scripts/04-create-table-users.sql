@@ -6,7 +6,7 @@ create table users
 	password varchar(45) not null,
 	first_name varchar(45) null,
 	last_name varchar(45) null,
-	role varchar(45) default 'user' not null
+	role varchar(45) default 'USER' not null
 )
 ;
 

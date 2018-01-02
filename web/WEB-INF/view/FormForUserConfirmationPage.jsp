@@ -11,6 +11,7 @@
 <form:form method="get" action="processForm" modelAttribute="answerForm" enctype="multipart/form-data">
 
     //Everything saves in DB with userId = 0
+    //For candidates saves in DB with userId
     <table>
         <tr>
             <td>Question</td>

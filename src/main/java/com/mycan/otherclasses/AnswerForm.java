@@ -7,8 +7,7 @@ import java.util.List;
 public class AnswerForm {
 
     private List<AnswerWithQuestion> answerWithQuestions;
-    private User currentUser = new User();
-
+    private Integer currentUserId;
     public List<AnswerWithQuestion> getAnswerWithQuestions() {
         return answerWithQuestions;
     }
@@ -16,11 +15,12 @@ public class AnswerForm {
         this.answerWithQuestions = answerWithQuestions;
     }
 
-    public User getCurrentUser() {
-        return currentUser;
+    public Integer getCurrentUserId() {
+        return currentUserId;
     }
 
-    public void setCurrentUser(User currentUser) {
-        this.currentUser = currentUser;
+    public void setCurrentUserId(Integer currentUserId) {
+        this.currentUserId = currentUserId;
     }
+
 }

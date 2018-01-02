@@ -1,9 +1,11 @@
 package com.mycan.controller;
 
+import com.mycan.entity.Answer;
 import com.mycan.entity.Question;
 import com.mycan.entity.User;
 import com.mycan.otherclasses.AnswerForm;
 import com.mycan.otherclasses.AnswerWithQuestion;
+import com.mycan.service.AnswerService;
 import com.mycan.service.QuestionService;
 import com.mycan.service.UserService;
 import com.sun.org.apache.xpath.internal.operations.Mod;
@@ -29,6 +31,9 @@ public class AdminController {
 
     @Autowired
     UserService userService;
+
+    @Autowired
+    AnswerService answerService;
 
     private static List<AnswerWithQuestion> answerWithQuestionList = new ArrayList<AnswerWithQuestion>();
     boolean startup = true;
@@ -117,16 +122,33 @@ public class AdminController {
 
         List<User> candidatesList = userService.getCandidatesList();
 
-        Map<String,User> candidateMap = new HashMap<String, User>();
+        Map<Integer,String> candidateMap = new HashMap<Integer, String>();
 
-        for (User cadidate: candidatesList){
-            candidateMap.put(cadidate.getEmail(), cadidate);
+        for (User candidate: candidatesList){
+            candidateMap.put(candidate.getUserId(), candidate.getFirstName() + " " +
+                    candidate.getLastName() + " " +  candidate.getEmail());
         }
 
         model.addAttribute("candidates", candidateMap);
-        model.addAttribute("curCandidate", new User());
         return "questionsFormForCandidateTemp";
     }
 
+
+    @GetMapping("candidateSubmit")
+    public String processForm(@ModelAttribute("answerForm") AnswerForm answerForm, Model model) {
+
+        List<AnswerWithQuestion> answerWithQuestions = answerForm.getAnswerWithQuestions();
+        model.addAttribute("answerForm", answerForm);
+        List<Answer> submitList = new ArrayList<Answer>();
+        int candidateId = answerForm.getCurrentUserId();
+        for (AnswerWithQuestion answerWithQuestion : answerWithQuestions) {
+            Answer answer = new Answer(candidateId, answerWithQuestion.getAnswer(),
+                    questionService.getQuestion(answerWithQuestion.getQuestionId()));
+            submitList.add(answer);
+        }
+       answerService.submitUserAnswers(submitList);
+
+        return "FormForUserConfirmationPage";
+    }
 
 }

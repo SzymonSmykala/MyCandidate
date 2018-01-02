@@ -6,17 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aae2f37-82af-4a65-baf2-201b838dad8c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/view/questionsFormForCandidateTemp.jsp" />
+    <list default="true" id="6aae2f37-82af-4a65-baf2-201b838dad8c" name="Default" comment="Added form:select">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/my_clinic_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/dao/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/dao/UserDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/dao/UserDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/otherclasses/AnswerForm.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/otherclasses/AnswerForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/service/UserServiceImlp.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/service/UserServiceImlp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -203,8 +194,8 @@
       <file leaf-file-name="questionsFormForCandidateTemp.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/questionsFormForCandidateTemp.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="24" column="102" lean-forward="false" selection-start-line="24" selection-start-column="102" selection-end-line="24" selection-end-column="102" />
+            <state relative-caret-position="236">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1427,7 +1418,7 @@
       <workItem from="1514629405647" duration="1255000" />
       <workItem from="1514821066902" duration="2490000" />
       <workItem from="1514889966727" duration="2569000" />
-      <workItem from="1514914926147" duration="33000" />
+      <workItem from="1514914926147" duration="156000" />
     </task>
     <task id="LOCAL-00001" summary="1) Delete Patient added&#10;2) Delete Visit added">
       <created>1504369475588</created>
@@ -1541,7 +1532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514756724645</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added form:select">
+      <created>1514914995313</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1514914995313</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1553,7 +1551,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94169000" />
+    <option name="totallyTimeSpent" value="94292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -1688,7 +1686,8 @@
     <MESSAGE value="1. Bug repaired&#10;2. Deleted useless classes&#10;3. Refactored code" />
     <MESSAGE value="Submit user answers to DB with userId = 0" />
     <MESSAGE value="Added DAO, service and Entity class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DAO, service and Entity class" />
+    <MESSAGE value="Added form:select" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added form:select" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2156,8 +2155,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/questionsFormForCandidateTemp.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="24" column="102" lean-forward="false" selection-start-line="24" selection-start-column="102" selection-end-line="24" selection-end-column="102" />
+        <state relative-caret-position="236">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>

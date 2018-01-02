@@ -1,1 +1,1 @@
-<%response.sendRedirect("admin/addUser"); %>
+<%response.sendRedirect("admin/candidateForm"); %>

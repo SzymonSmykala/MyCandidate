@@ -2,6 +2,8 @@ package com.mycan.controller;
 
 import com.mycan.entity.Question;
 import com.mycan.entity.User;
+import com.mycan.otherclasses.AnswerForm;
+import com.mycan.otherclasses.AnswerWithQuestion;
 import com.mycan.service.QuestionService;
 import com.mycan.service.UserService;
 import com.sun.org.apache.xpath.internal.operations.Mod;
@@ -10,7 +12,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Szymon on 08.09.2017.
@@ -24,6 +29,9 @@ public class AdminController {
 
     @Autowired
     UserService userService;
+
+    private static List<AnswerWithQuestion> answerWithQuestionList = new ArrayList<AnswerWithQuestion>();
+    boolean startup = true;
 
     @RequestMapping("questionsList")
     public String questionsList(Model model) {
@@ -88,10 +96,36 @@ public class AdminController {
 
     @PostMapping("addUserSubmit")
     public String addUserSubmit(@ModelAttribute("user") User user){
-        //TODO: add user to DB
         userService.addUser(user);
         System.out.println(user);
         return "redirect:/admin/addUser";
+    }
+
+    @RequestMapping("candidateForm")
+    public String candidateForm(Model model){
+        if (startup) {
+            for (Question question : questionService.getQuestionList()) {
+                AnswerWithQuestion answerWithQuestion = new AnswerWithQuestion(question.getId(), question.getQuestionContent());
+                answerWithQuestion.setAnswer("No answer");
+                answerWithQuestionList.add(answerWithQuestion);
+            }
+            startup = false;
+        }
+        AnswerForm answerForm = new AnswerForm();
+        answerForm.setAnswerWithQuestions(answerWithQuestionList);
+        model.addAttribute("answerForm", answerForm);
+
+        List<User> candidatesList = userService.getCandidatesList();
+
+        Map<String,User> candidateMap = new HashMap<String, User>();
+
+        for (User cadidate: candidatesList){
+            candidateMap.put(cadidate.getEmail(), cadidate);
+        }
+
+        model.addAttribute("candidates", candidateMap);
+        model.addAttribute("curCandidate", new User());
+        return "questionsFormForCandidateTemp";
     }
 
 

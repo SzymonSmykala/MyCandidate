@@ -33,17 +33,4 @@ public class TempController {
         return "temp";
     }
 
-    @RequestMapping("/aTest")
-    public String answerTest(){
-        int theId = 2;
-        List<Answer> answerList = answerService.getAnswersByUserId(theId);
-        for (Answer answer: answerList){
-            System.out.println(answer);
-        }
-        return "temp";
-    }
-
-
-
-
 }

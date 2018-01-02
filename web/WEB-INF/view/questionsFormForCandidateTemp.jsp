@@ -18,14 +18,14 @@
 <body>
 
 <h2>
-    Qustions' Form for Candidate
+    Questions' Form for Candidate
 </h2>
 
 
-<form:form method="get" action="processForm" modelAttribute="answerForm" enctype="multipart/form-data">
+<form:form method="get" action="candidateSubmit" modelAttribute="answerForm" enctype="multipart/form-data">
 
 
-    <form:select path="currentUser" items="${candidates}"/>
+    <form:select path="currentUserId" items="${candidates}"/>
 
 
     <table class="table-fill" cellspacing="0">
@@ -45,7 +45,11 @@
                 <td>
                         ${answerWithQuestion.questionContent}
                     <input name="answerWithQuestions[${status.index}].questionContent"
-                           value="${answerWithQuestion.questionContent}" type="hidden"/></td>
+                           value="${answerWithQuestion.questionContent}" type="hidden"/>
+                    <input name="answerWithQuestions[${status.index}].questionId"
+                           value="${answerWithQuestion.questionId}" type="hidden"/>
+
+                </td>
                 <td>
 
                     Yes <input name="answerWithQuestions[${status.index}].answer" value="Yes" type="radio"/>

@@ -1,0 +1,16 @@
+CREATE TABLE orders
+(
+  order_id   INT AUTO_INCREMENT
+    PRIMARY KEY,
+  order_date DATE NOT NULL,
+  product_id INT  NULL,
+  user_id    INT  NOT NULL,
+  CONSTRAINT orders_products_product_id_fk
+  FOREIGN KEY (product_id) REFERENCES products (product_id),
+  CONSTRAINT orders_users_user_id_fk
+  FOREIGN KEY (user_id) REFERENCES users (user_id)
+);
+CREATE INDEX orders_products_product_id_fk
+  ON orders (product_id);
+CREATE INDEX orders_users_user_id_fk
+  ON orders (user_id);

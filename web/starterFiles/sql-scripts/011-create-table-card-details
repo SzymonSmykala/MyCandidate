@@ -1,0 +1,11 @@
+CREATE TABLE card_details
+(
+  user_id          INT          NOT NULL,
+  card_holder_name VARCHAR(45)  NOT NULL,
+  card_number      VARCHAR(200) NOT NULL,
+  exp_date         DATE         NOT NULL,
+  CONSTRAINT card_details_users_user_id_fk
+  FOREIGN KEY (user_id) REFERENCES users (user_id)
+);
+CREATE INDEX card_details_users_user_id_fk
+  ON card_details (user_id);

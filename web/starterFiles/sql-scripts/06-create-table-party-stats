@@ -1,0 +1,10 @@
+CREATE TABLE party_stats
+(
+  party_shortcut VARCHAR(45) NOT NULL,
+  date           DATE        NOT NULL,
+  percent        INT         NOT NULL,
+  CONSTRAINT parties_stats_parties_party_shorcut_fk
+  FOREIGN KEY (party_shortcut) REFERENCES parties (party_shorcut)
+);
+CREATE INDEX parties_stats_parties_party_shorcut_fk
+  ON party_stats (party_shortcut);

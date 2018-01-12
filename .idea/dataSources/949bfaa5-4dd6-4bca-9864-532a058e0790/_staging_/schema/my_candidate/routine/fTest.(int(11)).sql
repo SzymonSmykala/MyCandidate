@@ -1,0 +1,2 @@
+SELECT * FROM users as U
+WHERE U.role = 'CANDIDATE'

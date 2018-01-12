@@ -23,7 +23,7 @@ public class Answer {
     @Column(name = "answer_content")
     private String answerContent;
 
-    @OneToOne(cascade = CascadeType.REMOVE)
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "question_id")
     private Question question;
 

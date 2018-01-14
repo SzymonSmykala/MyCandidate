@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.management.Query;
 import java.util.*;
 
 /**
@@ -49,6 +50,11 @@ public class UserController {
             }
             startup = false;
         }
+
+       for (AnswerWithQuestion answerWithQuestion: answerWithQuestionList){
+            answerWithQuestion.setAnswer("No answer");
+       }
+
         AnswerForm answerForm = new AnswerForm();
         answerForm.setAnswerWithQuestions(answerWithQuestionList);
         model.addAttribute("answerForm", answerForm);
@@ -67,15 +73,24 @@ public class UserController {
                     questionService.getQuestion(answerWithQuestion.getQuestionId()));
             submitList.add(answer);
         }
+        int userId = 0;
+        answerService.deleteAnswersByUserId(userId);
         answerService.submitUserAnswers(submitList);
+
+        List<User> matchedCandidates = getMatchedCandidatesList(userId);
+
+        for (User candidate: matchedCandidates){
+            System.out.println(candidate.getEmail() + " " + candidate.getPercentOfMatch());
+        }
+        model.addAttribute("matchedCandidates", matchedCandidates);
 
         return "FormForUserConfirmationPage";
     }
 
-    @RequestMapping("candidatesList")
-    public String getCandidatesList(){
 
-        List<Answer> matchedAnswers =  answerService.getMatchedAnswers();
+    public List<User> getMatchedCandidatesList(int userId){
+
+        List<Answer> matchedAnswers =  answerService.getMatchedCandidatesAnswers(userId);
         List<User> candidates = userService.getCandidatesList();
         Map<Integer, User> candidatesMap = new HashMap<Integer, User>();
 
@@ -86,16 +101,12 @@ public class UserController {
         for (Answer answer: matchedAnswers){
             candidatesMap.get(answer.getUserId()).incrementNumberOfMatchedAnswers();
         }
-       int questionsNumber = questionService.getQuestionNumber();
+        int questionsNumber = questionService.getQuestionNumber();
         for (User candidate: candidates){
-            System.out.println(candidate.getNumberOfMatchedAnswers());
             candidate.calculatePercentOfMatch(questionsNumber);
-            System.out.println("- " + candidate.getPercentOfMatch() + " %");
         }
 
-
-
-        return "questionsFormForUser";
+       return candidates;
     }
 
 

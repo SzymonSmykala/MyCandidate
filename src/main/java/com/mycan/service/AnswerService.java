@@ -15,5 +15,7 @@ public interface AnswerService {
 
     void submitUserAnswers(List<Answer> submitList);
 
-    List<Answer> getMatchedAnswers();
+    List<Answer> getMatchedCandidatesAnswers(int theUserId);
+
+    void deleteAnswersByUserId(int userId);
 }

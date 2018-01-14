@@ -32,8 +32,12 @@ public class AnswerServiceImpl implements AnswerService {
         answerDAO.submitUserAnswers(submitList);
     }
 
-    public List<Answer> getMatchedAnswers() {
-        return answerDAO.getMatchedAnswers();
+    public List<Answer> getMatchedCandidatesAnswers(int theUserId) {
+        return answerDAO.getMatchedCandidatesAnswers(theUserId);
+    }
+
+    public void deleteAnswersByUserId(int userId) {
+        answerDAO.deleteAnswersByUserId(userId);
     }
 
 

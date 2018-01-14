@@ -51,21 +51,27 @@ public class AnswerDAOImpl implements AnswerDAO {
     }
 
     @Transactional
-    public List<Answer> getMatchedAnswers() {
+    public List<Answer> getMatchedCandidatesAnswers(int theUserId) {
 
         Session session = sessionFactory.getCurrentSession();
         Query query = session.createNativeQuery("SELECT A.id, A.user_id, A.question_id, A.answer_content" +
                 " FROM answers as A JOIN users as U on U.user_id = A.user_id WHERE U.role = 'CANDIDATE'");
 
         List<Answer> answerListFromQuery = createAnswerListFromQuery(query);
-      return  calculateMatchedAnswers(answerListFromQuery);
+      return  calculateMatchedAnswers(answerListFromQuery, theUserId);
 
 
     }
+    @Transactional
+    public void deleteAnswersByUserId(int theUserId) {
+        Session session = sessionFactory.getCurrentSession();
+        session.createQuery("delete from Answer a where a.userId =" + theUserId).executeUpdate();
 
-    private List<Answer> calculateMatchedAnswers(List<Answer> answerListFromQuery) {
+    }
+
+    private List<Answer> calculateMatchedAnswers(List<Answer> answerListFromQuery, int theUserId) {
         List<Answer> resultList = new ArrayList<Answer>();
-        List<Answer> userAnswers = getAnswersByUserId(0);
+        List<Answer> userAnswers = getAnswersByUserId(theUserId);
 
         for (Answer candidateAnswer: answerListFromQuery){
             for (Answer userAnswer: userAnswers){

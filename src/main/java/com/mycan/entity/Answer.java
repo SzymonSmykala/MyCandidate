@@ -17,8 +17,6 @@ public class Answer {
     private int userId;
 
 
-//    @Column(name = "question_id")
-//    private int questionId;
 
     @Column(name = "answer_content")
     private String answerContent;
@@ -70,5 +68,15 @@ public class Answer {
 
     public void setQuestion(Question question) {
         this.question = question;
+    }
+
+    @Override
+    public String toString() {
+        return "Answer{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", answerContent='" + answerContent + '\'' +
+                ", question=" + question +
+                '}';
     }
 }

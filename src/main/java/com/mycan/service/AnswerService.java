@@ -14,4 +14,6 @@ public interface AnswerService {
     List<Answer> getAnswersByUserId(int userId);
 
     void submitUserAnswers(List<Answer> submitList);
+
+    List<Answer> getMatchedAnswers();
 }

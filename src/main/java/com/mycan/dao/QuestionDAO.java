@@ -18,4 +18,6 @@ public interface QuestionDAO {
     void delete(int theId);
 
     void update(Question question);
+
+    int getNumberOfQuestion();
 }

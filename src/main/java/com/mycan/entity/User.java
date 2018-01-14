@@ -13,22 +13,45 @@ public class User {
 
     @Id
     @Column(name = "user_id")
-    int userId;
+    private int userId;
 
     @Column(name = "email")
-    String email;
+    private String email;
 
     @Column(name = "password")
-    String password;
+    private String password;
 
     @Column(name = "first_name")
-    String firstName;
+    private String firstName;
 
     @Column(name = "last_name")
-    String lastName;
+    private String lastName;
 
     @Column(name = "role")
-    String role;
+    private String role;
+
+    @Transient
+    private int numberOfMatchedAnswers;
+
+    @Transient
+    private double percentOfMatch;
+
+
+    public double getPercentOfMatch() {
+        return percentOfMatch;
+    }
+
+    public void setPercentOfMatch(double percentOfMatch) {
+        this.percentOfMatch = percentOfMatch;
+    }
+
+    public int getNumberOfMatchedAnswers() {
+        return numberOfMatchedAnswers;
+    }
+
+    public void setNumberOfMatchedAnswers(int numberOfMatchedAnswers) {
+        this.numberOfMatchedAnswers = numberOfMatchedAnswers;
+    }
 
     public int getUserId() {
         return userId;
@@ -88,5 +111,13 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", role='" + role + '\'' +
                 '}';
+    }
+
+    public void incrementNumberOfMatchedAnswers(){
+        numberOfMatchedAnswers++;
+    }
+
+    public void calculatePercentOfMatch(int numberOfQuestions){
+        percentOfMatch = (double) numberOfMatchedAnswers / (double) numberOfQuestions * 100;
     }
 }

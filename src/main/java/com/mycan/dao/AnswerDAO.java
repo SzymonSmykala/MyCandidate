@@ -14,4 +14,5 @@ public interface AnswerDAO {
     List<Answer> getAnswersByUserId(int userId);
 
     void submitUserAnswers(List<Answer> submitList);
+    List<Answer> getMatchedAnswers();
 }

@@ -31,4 +31,10 @@ public class AnswerServiceImpl implements AnswerService {
     public void submitUserAnswers(List<Answer> submitList) {
         answerDAO.submitUserAnswers(submitList);
     }
+
+    public List<Answer> getMatchedAnswers() {
+        return answerDAO.getMatchedAnswers();
+    }
+
+
 }

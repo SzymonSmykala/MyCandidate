@@ -27,6 +27,9 @@
         <ul class="nav navbar-nav">
             <li ><a href="${pageContext.request.contextPath}/admin/questionsList">Questions List</a></li>
             <li class="active"><a href="${pageContext.request.contextPath}/admin/addQuestion">Add Question</a></li>
+            <li><a href="${pageContext.request.contextPath}/admin/candidateForm">Candidate Form</a></li>
+            <li><a href="${pageContext.request.contextPath}/admin/addUser">Add user</a></li>
+            <li><a href="${pageContext.request.contextPath}/user/questionForm">User Form</a></li>
 
         </ul>
         <ul class="nav navbar-nav navbar-right">

@@ -35,6 +35,9 @@ public class AdminController {
     @Autowired
     AnswerService answerService;
 
+    @Autowired
+    UserController userController;
+
     private static List<AnswerWithQuestion> answerWithQuestionList = new ArrayList<AnswerWithQuestion>();
     boolean startup = true;
 
@@ -55,6 +58,7 @@ public class AdminController {
     @PostMapping("/saveQuestion")
     public String saveQuestion(@ModelAttribute Question question ){
         questionService.addQuestion(question);
+        userController.setStartup(true);
         return "redirect:questionsList";
     }
 
@@ -108,14 +112,14 @@ public class AdminController {
 
     @RequestMapping("candidateForm")
     public String candidateForm(Model model){
-        if (startup) {
+
+            answerWithQuestionList = new ArrayList<AnswerWithQuestion>();
             for (Question question : questionService.getQuestionList()) {
                 AnswerWithQuestion answerWithQuestion = new AnswerWithQuestion(question.getId(), question.getQuestionContent());
                 answerWithQuestion.setAnswer("No answer");
                 answerWithQuestionList.add(answerWithQuestion);
             }
-            startup = false;
-        }
+
         AnswerForm answerForm = new AnswerForm();
         answerForm.setAnswerWithQuestions(answerWithQuestionList);
         model.addAttribute("answerForm", answerForm);
@@ -146,9 +150,12 @@ public class AdminController {
                     questionService.getQuestion(answerWithQuestion.getQuestionId()));
             submitList.add(answer);
         }
+        answerService.deleteAnswersByUserId(candidateId);
        answerService.submitUserAnswers(submitList);
 
-        return "FormForUserConfirmationPage";
+        return "redirect:/admin/candidateForm";
     }
+
+
 
 }

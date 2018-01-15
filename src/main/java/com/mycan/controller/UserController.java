@@ -24,7 +24,7 @@ import java.util.*;
 @SessionAttributes("answerForm")
 public class UserController {
 
-    private boolean startup = true;
+    boolean startup = true;
 
     @Autowired
     QuestionService questionService;
@@ -38,18 +38,22 @@ public class UserController {
 
     private static List<AnswerWithQuestion> answerWithQuestionList = new ArrayList<AnswerWithQuestion>();
 
+    public void setStartup(boolean b){
+        startup = b;
+    }
 
     @RequestMapping("/questionForm")
     public String showQuestionFormForUser(Model model) {
 
-        if (startup) {
+
+            answerWithQuestionList = new ArrayList<AnswerWithQuestion>();
             for (Question question : questionService.getQuestionList()) {
                 AnswerWithQuestion answerWithQuestion = new AnswerWithQuestion(question.getId(), question.getQuestionContent());
                 answerWithQuestion.setAnswer("No answer");
                 answerWithQuestionList.add(answerWithQuestion);
             }
             startup = false;
-        }
+
 
        for (AnswerWithQuestion answerWithQuestion: answerWithQuestionList){
             answerWithQuestion.setAnswer("No answer");
@@ -79,6 +83,8 @@ public class UserController {
 
         List<User> matchedCandidates = getMatchedCandidatesList(userId);
 
+
+
         for (User candidate: matchedCandidates){
             System.out.println(candidate.getEmail() + " " + candidate.getPercentOfMatch());
         }
@@ -101,14 +107,28 @@ public class UserController {
         for (Answer answer: matchedAnswers){
             candidatesMap.get(answer.getUserId()).incrementNumberOfMatchedAnswers();
         }
+        calculateMatchPercentForAllCandidates(candidates);
+        removeCandidatesWithMatchPercentLowerThanOne(candidates);
+
+        return candidates;
+    }
+
+    private void calculateMatchPercentForAllCandidates(List<User> candidates) {
         int questionsNumber = questionService.getQuestionNumber();
         for (User candidate: candidates){
             candidate.calculatePercentOfMatch(questionsNumber);
         }
-
-       return candidates;
     }
 
+    private void removeCandidatesWithMatchPercentLowerThanOne(List<User> candidates) {
+        Iterator<User> i = candidates.iterator();
+        while (i.hasNext()){
+            User candidate = i.next();
+            if (candidate.getPercentOfMatch() < 1){
+                i.remove();
+            }
+        }
+    }
 
 
 }

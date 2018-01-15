@@ -119,5 +119,6 @@ public class User {
 
     public void calculatePercentOfMatch(int numberOfQuestions){
         percentOfMatch = (double) numberOfMatchedAnswers / (double) numberOfQuestions * 100;
+
     }
 }

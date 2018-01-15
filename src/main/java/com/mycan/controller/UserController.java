@@ -83,6 +83,8 @@ public class UserController {
 
         List<User> matchedCandidates = getMatchedCandidatesList(userId);
 
+
+
         for (User candidate: matchedCandidates){
             System.out.println(candidate.getEmail() + " " + candidate.getPercentOfMatch());
         }
@@ -105,14 +107,28 @@ public class UserController {
         for (Answer answer: matchedAnswers){
             candidatesMap.get(answer.getUserId()).incrementNumberOfMatchedAnswers();
         }
+        calculateMatchPercentForAllCandidates(candidates);
+        removeCandidatesWithMatchPercentLowerThanOne(candidates);
+
+        return candidates;
+    }
+
+    private void calculateMatchPercentForAllCandidates(List<User> candidates) {
         int questionsNumber = questionService.getQuestionNumber();
         for (User candidate: candidates){
             candidate.calculatePercentOfMatch(questionsNumber);
         }
-
-       return candidates;
     }
 
+    private void removeCandidatesWithMatchPercentLowerThanOne(List<User> candidates) {
+        Iterator<User> i = candidates.iterator();
+        while (i.hasNext()){
+            User candidate = i.next();
+            if (candidate.getPercentOfMatch() < 1){
+                i.remove();
+            }
+        }
+    }
 
 
 }

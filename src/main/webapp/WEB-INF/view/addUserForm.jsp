@@ -10,6 +10,13 @@
 <html>
 <head>
     <title>Add new User</title>
+    <script>
+        function confirm() {
+            alert("User has been added to database!")
+        }
+    </script>
+
+
 </head>
 <body>
 
@@ -27,7 +34,7 @@
     CANDIDATE <form:radiobutton path="role" value="CANDIDATE"/>
     USER <form:radiobutton path="role" value="USER"/>
     <br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" onclick="return confirm()">
 
 </form:form>
 

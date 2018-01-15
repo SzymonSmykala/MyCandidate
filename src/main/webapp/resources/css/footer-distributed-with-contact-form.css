@@ -1,5 +1,4 @@
 .footer-distributed{
-	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -9,7 +8,17 @@
 	padding: 50px 60px 40px;
 	margin-top: 80px;
 	overflow: hidden;
+
+
+	background: #292c2f none repeat scroll 0% 0%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
 }
+
+
+
 
 /* Footer left */
 
@@ -144,6 +153,10 @@
 	padding: 15px 50px;
 	font-weight: bold;
 	float: right;
+}
+
+#body{
+	margin-bottom: 400px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */

@@ -1,12 +1,10 @@
-create table users
+CREATE TABLE users
 (
-	user_id int not null auto_increment
-		primary key,
-	email varchar(45) not null,
-	password varchar(45) not null,
-	first_name varchar(45) null,
-	last_name varchar(45) null,
-	role varchar(45) default 'USER' not null
-)
-;
-
+	user_id    INT AUTO_INCREMENT
+		PRIMARY KEY,
+	email      VARCHAR(45)                NULL,
+	password   VARCHAR(45)                NULL,
+	first_name VARCHAR(45)                NULL,
+	last_name  VARCHAR(45)                NULL,
+	role       VARCHAR(45) DEFAULT 'USER' NOT NULL
+);

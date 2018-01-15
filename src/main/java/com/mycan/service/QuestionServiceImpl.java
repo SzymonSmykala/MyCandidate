@@ -36,4 +36,8 @@ public class QuestionServiceImpl implements QuestionService {
     public void update(Question question) {
         questionDAO.update(question);
     }
+
+    public int getQuestionNumber() {
+        return questionDAO.getNumberOfQuestion();
+    }
 }

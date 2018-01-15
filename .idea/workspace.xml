@@ -6,29 +6,22 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aae2f37-82af-4a65-baf2-201b838dad8c" name="Default" comment="Reorganized project for AWS">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jstl_jstl_1_2.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mycan/controller/TempController.class" afterPath="$PROJECT_DIR$/target/classes/com/mycan/controller/TempController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/my_clinic_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/my_clinic_war_exploded.xml" />
+    <list default="true" id="6aae2f37-82af-4a65-baf2-201b838dad8c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/949bfaa5-4dd6-4bca-9864-532a058e0790/_staging_/schema/my_candidate/routine/fTest.(int(11)).sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/949bfaa5-4dd6-4bca-9864-532a058e0790/_staging_/schema/my_candidate/routine/getCandidatesAnswers.().sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/949bfaa5-4dd6-4bca-9864-532a058e0790/_staging_/schema/my_candidate/routine/getCandidatesAnswers.(int(11)).sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/949bfaa5-4dd6-4bca-9864-532a058e0790/_staging_/schema/my_candidate/routine/new_user.().sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/949bfaa5-4dd6-4bca-9864-532a058e0790/_staging_/schema/my_candidate/view/getcandidatesanswers.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/starterFiles/sql-scripts/procedures/procedure-new-user().sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/949bfaa5-4dd6-4bca-9864-532a058e0790.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/949bfaa5-4dd6-4bca-9864-532a058e0790.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-clinic.iml" afterPath="$PROJECT_DIR$/my-clinic.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycan/entity/Answer.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycan/entity/Answer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/addQuestionForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/addQuestionForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/questionsList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/questionsList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/starterFiles/sql-scripts/03-create-table-answers.sql" afterPath="$PROJECT_DIR$/web/starterFiles/sql-scripts/03-create-table-answers.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/starterFiles/sql-scripts/04-create-table-users.sql" afterPath="$PROJECT_DIR$/web/starterFiles/sql-scripts/04-create-table-users.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="C:\Users\Szymon\IdeaProjects\MyCandidateGit\.idea\shelf/" />
     <ignored path="C:\Users\Szymon\IdeaProjects\MyCandidateGitt\.idea\shelf/" />
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
-    <ignored path=".idea/" />
-    <ignored path="lib/" />
-    <ignored path="out/" />
-    <ignored path="target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,85 +53,39 @@
         <item name="my_candidate" type="e3449647:DbNodeDescriptor" />
         <item name="" type="fce03ad6:DatabaseStructure$GroupNode" />
       </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="my_candidate@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="my_candidate" type="e3449647:DbNodeDescriptor" />
+        <item name="" type="fce03ad6:DatabaseStructure$GroupNode" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="questionsList.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/questionsList.jsp">
+      <file leaf-file-name="01-create-view-get-candidates-answers.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/views/01-create-view-get-candidates-answers.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="30" column="90" lean-forward="false" selection-start-line="30" selection-start-column="90" selection-end-line="30" selection-end-column="90" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addQuestionForm.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/addQuestionForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="52" lean-forward="true" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="questionsFormForUser.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/questionsFormForUser.jsp">
+      <file leaf-file-name="console_14.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_14.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editQuestionPage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/editQuestionPage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="60" column="73" lean-forward="false" selection-start-line="60" selection-start-column="73" selection-end-line="60" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Answer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/entity/Answer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="answers" pinned="false" current-in-tab="false">
-        <entry file="das://table:/a8f76612/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.answers">
+      <file leaf-file-name="getcandidatesanswers" pinned="false" current-in-tab="false">
+        <entry file="das://view:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.getcandidatesanswers">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -147,20 +94,68 @@
         </entry>
       </file>
       <file leaf-file-name="answers" pinned="false" current-in-tab="false">
-        <entry file="das://src:table:/a8f76612/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.answers">
+        <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.answers">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getcandidatesanswers.sql" pinned="false" current-in-tab="false">
+        <entry file="dbSrc:///16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/schema/my_candidate/view/getcandidatesanswers.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/entity/Question.java">
+      <file leaf-file-name="users" pinned="false" current-in-tab="false">
+        <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users" pinned="false" current-in-tab="false">
+        <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.users">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04-create-table-users.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/04-create-table-users.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_user.().sql" pinned="false" current-in-tab="false">
+        <entry file="dbSrc:///16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/schema/my_candidate/routine/new_user.().sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="procedure-new-user().sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/procedures/procedure-new-user().sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -213,22 +208,19 @@
       <projects_view />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/web/WEB-INF/view/FormForUserConfirmationPage.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/MysqlCon.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/view/loginPage.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/view/questionsList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycan/entity/ListOfAnswers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycan/entity/Question.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycan/entity/AnswerFOrm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycan/entity/AnswerForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/controller/sadsad.java" />
         <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/sasa.sql" />
         <option value="dbtable:/3dd2c57a/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.questions" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/entity/AnswerNE.java" />
         <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/03-create-table-answers-NOT-READY.sql" />
+        <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/03-create-table-answers.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/otherclasses/AnswerNE.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/otherclasses/AnswerWithQuestion.java" />
@@ -238,6 +230,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/dao/AnswerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/dao/AnswerDAOImpl.java" />
         <option value="dbtable:/3122fd45/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.questions" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycan/entity/Answer.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="dbtable:/3122fd45/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.answers" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java" />
@@ -251,22 +244,27 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_3.sql" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/questionsFormForCandidateTemp.jsp" />
-        <option value="src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.users" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/controller/TempController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/view/FormForUserConfirmationPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycan/otherclasses/AnswerForm.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_5.sql" />
+        <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/06-create-table-party-stats" />
+        <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/08-create-table-orders" />
+        <option value="src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.products" />
+        <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/07-create-table-products.sql" />
+        <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/premium_periods" />
+        <option value="src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.candidate_details" />
+        <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/010-create-table-candidate-details" />
+        <option value="src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.card_details" />
+        <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/011-create-table-card-details" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_13.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_14.sql" />
+        <option value="/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/schema/my_candidate/view/getcandidatesanswers.sql" />
         <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/04-create-table-users.sql" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/questionsFormForCandidateTemp.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/testAWS.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_16.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycan/entity/Answer.java" />
-        <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/03-create-table-answers.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/editQuestionPage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/addQuestionForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/questionsList.jsp" />
+        <option value="/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/schema/my_candidate/routine/new_user.().sql" />
+        <option value="src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.users" />
+        <option value="$PROJECT_DIR$/web/starterFiles/sql-scripts/procedures/procedure-new-user().sql" />
       </list>
     </option>
   </component>
@@ -283,16 +281,25 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="my-clinic" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="my-clinic" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="1389" />
+    <option name="width" value="1294" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -313,43 +320,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -357,8 +365,8 @@
               <item name="mycan" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -367,8 +375,18 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mycan" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -377,92 +395,93 @@
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mycan" type="462c0819:PsiDirectoryNode" />
+              <item name="otherclasses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mycan" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="starterFiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MyCandidateNEWTEN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyCandidateNEWTEN" type="462c0819:PsiDirectoryNode" />
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="starterFiles" type="462c0819:PsiDirectoryNode" />
               <item name="sql-scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="starterFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="sql-scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="procedures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="starterFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="sql-scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyCandidateGitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyCandidateGitt" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20693512" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="SearchEverywhereHistoryKey" value="pom&#9;FILE&#9;file://C:/Users/Szymon/IdeaProjects/MyCandidateGit/pom.xml" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Szymon\IdeaProjects\MyCandidateNEWTEN\src\main\webapp" />
-      <recent name="C:\Users\Szymon\IdeaProjects\MyCandidateNEWTEN\src\main\webapp\WEB-INF" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Szymon\IdeaProjects\MyCandidateNEWTEN\src\main" />
       <recent name="C:\Users\Szymon\IdeaProjects\MyCandidateGitt\web\starterFiles\sql-scripts" />
       <recent name="C:\Users\Szymon\Desktop\mycandup\web\starterFiles\sql-scripts" />
     </key>
@@ -470,147 +489,6 @@
       <recent name="com.mycan.dao" />
       <recent name="com.mycan.test" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pom.xml</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/FormForUserConfirmationPage.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/addQuestionForm.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/addUserForm.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/editQuestionPage.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/loginPage.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/questionsFormForCandidateTemp.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/questionsFormForUser.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/questionsList.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/temp.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/testAWS.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/index.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/css/loginPageStyle.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/css/tableStyle.css</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/applicationContext.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/view/FormForUserConfirmationPage.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/view/addQuestionForm.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/view/addUserForm.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/view/editQuestionPage.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/view/loginPage.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/view/questionsFormForCandidateTemp.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/view/questionsFormForUser.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/view/questionsList.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/view/temp.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/web.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/index.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/resources/css/loginPageStyle.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/resources/css/tableStyle.css</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1313,8 +1191,11 @@
       <workItem from="1514821066902" duration="2490000" />
       <workItem from="1514889966727" duration="2569000" />
       <workItem from="1514914926147" duration="33000" />
-      <workItem from="1515789467077" duration="1565000" />
-      <workItem from="1515791053119" duration="4924000" />
+      <workItem from="1515359866708" duration="231000" />
+      <workItem from="1515360159974" duration="142000" />
+      <workItem from="1515421994003" duration="3028000" />
+      <workItem from="1515690931900" duration="1484000" />
+      <workItem from="1515748291443" duration="1948000" />
     </task>
     <task id="LOCAL-00001" summary="1) Delete Patient added&#10;2) Delete Visit added">
       <created>1504369475588</created>
@@ -1428,12 +1309,12 @@
       <option name="project" value="LOCAL" />
       <updated>1514756724645</updated>
     </task>
-    <task id="LOCAL-00017" summary="Reorganized project for AWS">
-      <created>1515790854629</created>
+    <task id="LOCAL-00017" summary="1. Added candidates' answers sql view&#10;2. Edited users table">
+      <created>1515436410128</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1515790854629</updated>
+      <updated>1515436410128</updated>
     </task>
     <option name="localTasksCounter" value="18" />
     <servers />
@@ -1447,11 +1328,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107040000" />
+    <option name="totallyTimeSpent" value="110763000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1389" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Azure Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1461,25 +1341,26 @@
       <window_info id="Azure Activity Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26904377" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1526232" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="HDInsight Spark Submission" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120746434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32808024" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27173913" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31828442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49456522" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19117647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Spark Job in Cluster" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Remote Spark Job in Cluster" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1494,7 +1375,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1587,8 +1467,7 @@
     <MESSAGE value="1. Bug repaired&#10;2. Deleted useless classes&#10;3. Refactored code" />
     <MESSAGE value="Submit user answers to DB with userId = 0" />
     <MESSAGE value="Added DAO, service and Entity class" />
-    <MESSAGE value="Reorganized project for AWS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reorganized project for AWS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added DAO, service and Entity class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1608,92 +1487,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_6.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_5.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/service/UserService.java">
+    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.questions">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="68">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/service/UserServiceImlp.java">
+    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.answers">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        <state relative-caret-position="204">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/3dd2f5c5/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.users" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/dao/UserDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="81" column="18" lean-forward="false" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/service/AnswerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_3.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/dao/QuestionDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.questions" />
-    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.questions" />
-    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.users" />
-    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.users" />
-    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.answers" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/TempController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1702,18 +1509,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/questionsFormForCandidateTemp.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/questionsFormForUser.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/FormForUserConfirmationPage.jsp" />
-    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.answers" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/questionsFormForCandidateTemp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="49" column="80" lean-forward="false" selection-start-line="49" selection-start-column="80" selection-end-line="49" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/questionsFormForUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/FormForUserConfirmationPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="151" column="5" lean-forward="false" selection-start-line="151" selection-start-column="5" selection-end-line="151" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/otherclasses/AnswerForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/03-create-table-answers.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_4.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/schema/my_candidate/routine/proc.().sql" />
+    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.parties_stats">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.parties_stats">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.party_stats">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/06-create-table-party-stats">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.orders">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/08-create-table-orders">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.products">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/07-create-table-products.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.premium_periods">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/09-create-table-premium-periods.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.candidate_details">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/010-create-table-candidate-details">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.card_details">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.card_details">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/011-create-table-card-details">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/01-create-user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1724,201 +1683,240 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/04-create-table-users.sql">
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/05-create-table-parties.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="75" lean-forward="false" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.candidate_details">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.questions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.parties">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.party_stats">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.orders">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.premium_periods">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/949bfaa5-4dd6-4bca-9864-532a058e0790.SCHEMA:my_candidate">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>949bfaa5-4dd6-4bca-9864-532a058e0790.SCHEMA:my_candidate</OriginalElement>
+          <nodes>
+            <node x="216.0" y="212.0">949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.candidate_details</node>
+            <node x="432.0" y="223.5">949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.premium_periods</node>
+            <node x="0.0" y="397.0">949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.questions</node>
+            <node x="592.0" y="223.5">949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.card_details</node>
+            <node x="828.0" y="223.0">949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.orders</node>
+            <node x="514.0" y="0.0">949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.users</node>
+            <node x="91.96875" y="22.0">949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.parties</node>
+            <node x="4.0" y="521.0">949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.answers</node>
+            <node x="0.0" y="234.5">949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.party_stats</node>
+            <node x="842.25" y="11.0">949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.products</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.candidate_details" target="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.parties">
+              <point x="-49.0" y="-70.0" />
+              <point x="265.0" y="192.0" />
+              <point x="235.21875" y="192.0" />
+              <point x="47.75" y="59.0" />
+            </edge>
+            <edge source="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.candidate_details" target="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.users">
+              <point x="49.0" y="-70.0" />
+              <point x="363.0" y="182.0" />
+              <point x="535.75" y="182.0" />
+              <point x="-65.25" y="81.0" />
+            </edge>
+            <edge source="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.orders" target="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.users">
+              <point x="-37.25" y="-59.0" />
+              <point x="865.25" y="182.0" />
+              <point x="666.25" y="182.0" />
+              <point x="65.25" y="81.0" />
+            </edge>
+            <edge source="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.card_details" target="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.users">
+              <point x="0.0" y="-58.5" />
+              <point x="700.0" y="192.0" />
+              <point x="622.75" y="192.0" />
+              <point x="21.75" y="81.0" />
+            </edge>
+            <edge source="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.answers" target="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.questions">
+              <point x="0.0" y="-59.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.premium_periods" target="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.users">
+              <point x="0.0" y="-58.5" />
+              <point x="502.0" y="192.0" />
+              <point x="579.25" y="192.0" />
+              <point x="-21.75" y="81.0" />
+            </edge>
+            <edge source="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.party_stats" target="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.parties">
+              <point x="0.0" y="-47.5" />
+              <point x="98.0" y="192.0" />
+              <point x="139.71875" y="192.0" />
+              <point x="-47.75" y="59.0" />
+            </edge>
+            <edge source="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.orders" target="949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.products">
+              <point x="37.25" y="-59.0" />
+              <point x="0.0" y="70.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8573596358118362" x="519.0" y="328.0" />
+          <SelectedNodes>
+            <node>949bfaa5-4dd6-4bca-9864-532a058e0790.TABLE:my_candidate.party_stats</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_13.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_5.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
+          <caret line="8" column="77" lean-forward="false" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/loginPage.jsp">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_11.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://view:/a8f76612/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.getcandidatesanswers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbSrc:///a8f76612/949bfaa5-4dd6-4bca-9864-532a058e0790/schema/my_candidate/routine/get_last_inserted_user_id.().sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_16.sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_12.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/views/01-create-view-get-candidates-answers.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/FormForUserConfirmationPage.jsp">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/949bfaa5-4dd6-4bca-9864-532a058e0790/console_14.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="69" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/testAWS.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/temp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/addUserForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/questionsFormForCandidateTemp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="24" column="70" lean-forward="false" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="112" column="10" lean-forward="false" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-clinic.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/a8f76612/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.users">
+    <entry file="das://view:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.getcandidatesanswers">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="132" column="47" lean-forward="false" selection-start-line="132" selection-start-column="47" selection-end-line="132" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="60" column="73" lean-forward="false" selection-start-line="60" selection-start-column="73" selection-end-line="60" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/entity/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/a8f76612/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.answers">
+    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.answers">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://src:table:/a8f76612/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.answers">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/03-create-table-answers.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="dbSrc:///16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/schema/my_candidate/view/getcandidatesanswers.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycan/entity/Answer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/questionsFormForUser.jsp">
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/04-create-table-users.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/editQuestionPage.jsp">
+    <entry file="das://src:table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.users">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/addQuestionForm.jsp">
+    <entry file="das://table:/16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/my_candidate.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///16ceffd7/949bfaa5-4dd6-4bca-9864-532a058e0790/schema/my_candidate/routine/new_user.().sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="52" lean-forward="true" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/questionsList.jsp">
+    <entry file="file://$PROJECT_DIR$/web/starterFiles/sql-scripts/procedures/procedure-new-user().sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="90" lean-forward="false" selection-start-line="30" selection-start-column="90" selection-end-line="30" selection-end-column="90" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1932,7 +1930,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.20693512" />
+                <option value="0.3864447" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1988,7 +1986,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Hibernate 5.2.10-5.2.10</last-edited>
+          <last-edited>Maven: javax.servlet.jsp.jstl:jstl:1.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

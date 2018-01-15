@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.Transient;
 import java.util.List;
 
 /**
@@ -51,5 +52,10 @@ public class QuestionDAOImpl implements QuestionDAO {
     public void update(Question question) {
         Session session = sessionFactory.getCurrentSession();
         session.update(question);
+    }
+    @Transactional
+    public int getNumberOfQuestion() {
+        List<Question> questions = getQuestionList();
+        return questions.size();
     }
 }

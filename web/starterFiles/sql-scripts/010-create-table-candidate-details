@@ -1,0 +1,15 @@
+CREATE TABLE candidate_details
+(
+  user_id        INT           NOT NULL
+    PRIMARY KEY,
+  party_shortcut VARCHAR(45)   NULL,
+  description    VARCHAR(2000) NULL,
+  website        VARCHAR(200)  NULL,
+  birth_date     DATE          NULL,
+  CONSTRAINT candidate_details_users_user_id_fk
+  FOREIGN KEY (user_id) REFERENCES users (user_id),
+  CONSTRAINT candidate_details_parties_party_shorcut_fk
+  FOREIGN KEY (party_shortcut) REFERENCES parties (party_shorcut)
+);
+CREATE INDEX candidate_details_parties_party_shorcut_fk
+  ON candidate_details (party_shortcut);

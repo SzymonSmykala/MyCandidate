@@ -1,16 +1,19 @@
 package com.mycan.controller;
 
 import com.mycan.entity.Answer;
+import com.mycan.entity.User;
 import com.mycan.otherclasses.AnswerWithQuestion;
 import com.mycan.otherclasses.AnswerForm;
 import com.mycan.entity.Question;
 import com.mycan.service.AnswerService;
 import com.mycan.service.QuestionService;
+import com.mycan.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.management.Query;
 import java.util.*;
 
 /**
@@ -29,6 +32,9 @@ public class UserController {
     @Autowired
     AnswerService answerService;
 
+    @Autowired
+    UserService userService;
+
 
     private static List<AnswerWithQuestion> answerWithQuestionList = new ArrayList<AnswerWithQuestion>();
 
@@ -44,6 +50,11 @@ public class UserController {
             }
             startup = false;
         }
+
+       for (AnswerWithQuestion answerWithQuestion: answerWithQuestionList){
+            answerWithQuestion.setAnswer("No answer");
+       }
+
         AnswerForm answerForm = new AnswerForm();
         answerForm.setAnswerWithQuestions(answerWithQuestionList);
         model.addAttribute("answerForm", answerForm);
@@ -62,10 +73,42 @@ public class UserController {
                     questionService.getQuestion(answerWithQuestion.getQuestionId()));
             submitList.add(answer);
         }
+        int userId = 0;
+        answerService.deleteAnswersByUserId(userId);
         answerService.submitUserAnswers(submitList);
+
+        List<User> matchedCandidates = getMatchedCandidatesList(userId);
+
+        for (User candidate: matchedCandidates){
+            System.out.println(candidate.getEmail() + " " + candidate.getPercentOfMatch());
+        }
+        model.addAttribute("matchedCandidates", matchedCandidates);
 
         return "FormForUserConfirmationPage";
     }
+
+
+    public List<User> getMatchedCandidatesList(int userId){
+
+        List<Answer> matchedAnswers =  answerService.getMatchedCandidatesAnswers(userId);
+        List<User> candidates = userService.getCandidatesList();
+        Map<Integer, User> candidatesMap = new HashMap<Integer, User>();
+
+        for (User candidate: candidates){
+            candidatesMap.put(candidate.getUserId(), candidate);
+        }
+
+        for (Answer answer: matchedAnswers){
+            candidatesMap.get(answer.getUserId()).incrementNumberOfMatchedAnswers();
+        }
+        int questionsNumber = questionService.getQuestionNumber();
+        for (User candidate: candidates){
+            candidate.calculatePercentOfMatch(questionsNumber);
+        }
+
+       return candidates;
+    }
+
 
 
 }

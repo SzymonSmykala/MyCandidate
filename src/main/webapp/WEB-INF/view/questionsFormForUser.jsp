@@ -133,55 +133,72 @@
 
     </div>
 
+    <%--<div class="container">--%>
+        <%--<div class="footer">--%>
+            <%--<footer class="footer-distributed">--%>
+
+                <%--<div class="footer-left">--%>
+
+                    <%--<h3>My <span>Candidate</span></h3>--%>
+
+                    <%--<p class="footer-links">--%>
+                        <%--<a href="#">Home</a>--%>
+                        <%--·--%>
+                        <%--<a href="#">Blog</a>--%>
+                        <%--·--%>
+                        <%--<a href="#">About Us</a>--%>
+                        <%--·--%>
+                        <%--<a href="#">Contact</a>--%>
+                    <%--</p>--%>
+
+                    <%--<p class="footer-company-name">Szymon Smykała &copy; 2018</p>--%>
+
+                    <%--<div class="footer-icons">--%>
+
+                        <%--<a href="#"><i class="fa fa-facebook"></i></a>--%>
+                        <%--<a href="#"><i class="fa fa-twitter"></i></a>--%>
+                        <%--<a href="https://www.linkedin.com/in/szymon-smyka%C5%82a/"><i class="fa fa-linkedin"></i></a>--%>
+                        <%--<a href="https://github.com/SzymonSmykala"><i class="fa fa-github"></i></a>--%>
+
+                    <%--</div>--%>
+
+                <%--</div>--%>
+
+                <%--<div class="footer-right">--%>
+
+                    <%--<p>Contact Us</p>--%>
+
+                    <%--<form action="#" method="post">--%>
+
+                        <%--<input type="text" name="email" placeholder="Email"/>--%>
+                        <%--<textarea name="message" placeholder="Message"></textarea>--%>
+                        <%--<button>Send</button>--%>
+
+                    <%--</form>--%>
+
+                <%--</div>--%>
+
+            <%--</footer>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+<%--</div>--%>
+
     <div class="container">
-        <div class="footer">
-            <footer class="footer-distributed">
-
-                <div class="footer-left">
-
-                    <h3>My <span>Candidate</span></h3>
-
-                    <p class="footer-links">
-                        <a href="#">Home</a>
-                        ·
-                        <a href="#">Blog</a>
-                        ·
-                        <a href="#">About Us</a>
-                        ·
-                        <a href="#">Contact</a>
-                    </p>
-
-                    <p class="footer-company-name">Szymon Smykała &copy; 2018</p>
-
-                    <div class="footer-icons">
-
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/szymon-smyka%C5%82a/"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://github.com/SzymonSmykala"><i class="fa fa-github"></i></a>
-
-                    </div>
-
+        <div class="row">
+            <hr>
+            <div class="col-lg-12">
+                <div class="col-md-8">
+                    <a href="#">Terms of Service</a> | <a href="#">Privacy</a>
                 </div>
-
-                <div class="footer-right">
-
-                    <p>Contact Us</p>
-
-                    <form action="#" method="post">
-
-                        <input type="text" name="email" placeholder="Email"/>
-                        <textarea name="message" placeholder="Message"></textarea>
-                        <button>Send</button>
-
-                    </form>
-
+                <div class="col-md-4">
+                    <p class="muted pull-right">© 2018 Szymon Smykała. All rights reserved</p>
                 </div>
-
-            </footer>
+            </div>
         </div>
     </div>
-</div>
+
+
+
 
 </body>
 </html>

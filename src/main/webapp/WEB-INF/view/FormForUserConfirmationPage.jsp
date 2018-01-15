@@ -85,8 +85,8 @@
 
 
                         <tr>
-                            <td> Candidate Name</td>
-                            <td>Percent Of Match</td>
+                            <%--<td> Candidate Name</td>--%>
+                            <%--<td>Percent Of Match</td>--%>
                         </tr>
 
                         <c:forEach items="${matchedCandidates}" var="cadidate">
@@ -99,9 +99,9 @@
                                                  class="media-photo">
                                         </a>
                                         <div class="media-body">
-                                            <span class="media-meta pull-right">//Here will be candidate birth date</span>
+                                            <span class="media-meta pull-right">  </span>
                                             <h4 class="title">
-                                                    ${cadidate.firstName} ${cadidate.lastName}
+                                                 <b style="color: #3F71AE"> ${cadidate.firstName} ${cadidate.lastName} </b>
 
                                             </h4>
                                             <p class="summary">//Here will be more information of candidate</p>
@@ -110,8 +110,8 @@
                                 </td>
 
 
-                                <td>
-                                        ${cadidate.percentOfMatch} %
+                                <td style="align-items: center">
+                                     <b style="color: forestgreen; ont-size:300%; ">   ${cadidate.percentOfMatch} %  </b>
                                 </td>
 
                             </tr>

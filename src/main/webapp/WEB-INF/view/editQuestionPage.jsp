@@ -31,6 +31,9 @@
     </tr>
 
 </table>
+
+
+<%@ include file="parts/footer.jsp" %>
 </body>
 
 

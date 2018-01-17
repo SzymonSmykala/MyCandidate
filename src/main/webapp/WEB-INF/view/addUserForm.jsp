@@ -37,6 +37,6 @@
     <input type="submit" value="Submit" onclick="return confirm()">
 
 </form:form>
-
+<%@ include file="parts/footer.jsp" %>
 </body>
 </html>

@@ -62,7 +62,7 @@
     </table>
 
 </form:form>
-
+<%@ include file="parts/footer.jsp" %>
 
 </body>
 </html>

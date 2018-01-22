@@ -1,7 +1,7 @@
-DROP PROCEDURE IF EXISTS  Usp_GetMatchingPercent;
-CREATE PROCEDURE Usp_GetMatchingPercent ()
+DROP VIEW IF EXISTS  Usp_GetMatchingPercent;
+CREATE VIEW Usp_GetMatchingPercent AS (
 
-  SET @UserWhoAnsweredId = 0;
+
 select SubQuery.user_id, count(SubQuery.user_id) as PoprawnaLiczbaOdp
 From (
        Select A.user_id, question_id, answer_content from answers as A
@@ -16,5 +16,4 @@ From (
      ) as SubQuery
 Group by SubQuery.user_id
 ORDER BY PoprawnaLiczbaOdp DESC
-
-# A.user_id
+)

@@ -1,0 +1,15 @@
+DROP FUNCTION IF EXISTS  isTodayCandidatesStatsRecord;
+CREATE FUNCTION isTodayCandidatesStatsRecord()
+  RETURNS INT
+  BEGIN
+
+    CASE WHEN (SELECT COUNT(*)
+               FROM `candidates-stats`
+               WHERE date = DATE(NOW())) > 0
+      THEN RETURN 1;
+      ELSE
+      RETURN 0;
+    END CASE;
+
+
+  END;

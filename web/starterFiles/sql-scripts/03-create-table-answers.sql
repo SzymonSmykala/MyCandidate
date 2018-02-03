@@ -1,4 +1,3 @@
--- auto-generated definition
 CREATE TABLE answers
 (
   id             INT AUTO_INCREMENT

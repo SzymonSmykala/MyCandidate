@@ -7,9 +7,13 @@ CREATE TABLE candidate_details
   website        VARCHAR(200)  NULL,
   birth_date     DATE          NULL,
   CONSTRAINT candidate_details_users_user_id_fk
-  FOREIGN KEY (user_id) REFERENCES users (user_id),
+  FOREIGN KEY (user_id) REFERENCES users (user_id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE,
   CONSTRAINT candidate_details_parties_party_shorcut_fk
   FOREIGN KEY (party_shortcut) REFERENCES parties (party_shorcut)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
 );
 CREATE INDEX candidate_details_parties_party_shorcut_fk
   ON candidate_details (party_shortcut);

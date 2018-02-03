@@ -1,6 +1,7 @@
 DROP VIEW IF EXISTS allStatistics;
 CREATE VIEW allStatistics
   AS
+    SELECT * FROM (
     (SELECT
        stats.date AS DateOne,
        stats.numberofanswers,
@@ -13,6 +14,9 @@ CREATE VIEW allStatistics
        stats.numberofanswers,
        `candidates-stats`.numberOfNewCandidates
      FROM stats
-       RIGHT JOIN `candidates-stats` ON stats.date = `candidates-stats`.date)
+       RIGHT JOIN `candidates-stats` ON stats.date = `candidates-stats`.date)) AS SUBQUERY
+  ORDER BY SUBQUERY.DateOne
+
+
 
 

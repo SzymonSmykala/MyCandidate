@@ -6,10 +6,10 @@ FOR EACH ROW
     INSERT INTO `candidates-stats`(date, numberOfNewCandidates) VALUES (DATE(NOW()),0)
     ON DUPLICATE KEY UPDATE date = VALUES(date);
 
-    CASE WHEN NEW.role = "CANDIDATE"
+    IF NEW.role = 'CANDIDATE'
       THEN
         UPDATE `candidates-stats`
         SET numberOfNewCandidates = numberOfNewCandidates + 1
         WHERE `candidates-stats`.date = DATE(NOW());
-    END CASE;
+    END IF;
   END;

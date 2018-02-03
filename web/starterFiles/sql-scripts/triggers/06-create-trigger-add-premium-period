@@ -1,0 +1,22 @@
+DROP TRIGGER IF EXISTS add_premium_period;
+CREATE TRIGGER add_premium_period
+AFTER INSERT ON orders
+  FOR EACH ROW
+  BEGIN
+
+    DECLARE days INT;
+    DECLARE priceOfProduct INT;
+
+    CALL get_premium_period_from_order(NEW.order_id, days);
+
+
+   CALL get_premium_price_from_order(NEW.order_id, priceOfProduct);
+
+    INSERT premium_periods (user_id, begin_date, end_date, price)
+    VALUES (NEW.user_id, DATE(NEW.order_date), DATE(DATE_ADD(NEW.order_date,INTERVAL days DAY )), priceOfProduct);
+
+
+
+  END;
+
+

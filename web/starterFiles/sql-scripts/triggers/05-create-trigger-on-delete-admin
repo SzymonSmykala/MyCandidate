@@ -1,0 +1,14 @@
+DROP TRIGGER  IF EXISTS delete_Admin;
+DELIMITER $$
+CREATE TRIGGER delete_Admin
+BEFORE DELETE ON my_candidate.users
+FOR EACH ROW
+  BEGIN
+
+    IF OLD.role = 'ADMIN'
+    THEN
+    SIGNAL SQLSTATE '02000' SET MESSAGE_TEXT = 'Error: Cannot delete admin row!';
+    END IF;
+  END;
+
+DELIMITER ;

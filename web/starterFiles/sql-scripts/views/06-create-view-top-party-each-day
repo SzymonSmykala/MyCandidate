@@ -1,0 +1,6 @@
+DROP VIEW  IF EXISTS topPartyEachDay;
+CREATE VIEW topPartyEachDay AS(
+
+  SELECT party_stats.date as Date, topPartyOnDay(party_stats.date) as TopParty FROM party_stats GROUP BY date
+
+)

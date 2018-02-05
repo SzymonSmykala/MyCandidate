@@ -20,5 +20,15 @@
       <user-name>mycandidate</user-name>
       <introspection-schemas>*:my_candidate</introspection-schemas>
     </data-source>
+    <data-source name="my_candidate@mycandidate.cgwz4pqvgfod.eu-central-1.rds.amazonaws.com" uuid="445e28a9-3bd2-4ccb-8ede-a84c38213078">
+      <database-info product="MySQL" version="5.6.27-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>mycandidate</user-name>
+      <introspection-schemas>*:my_candidate</introspection-schemas>
+    </data-source>
   </component>
 </project>

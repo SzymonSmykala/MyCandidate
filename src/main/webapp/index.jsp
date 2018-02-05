@@ -1,1 +1,1 @@
-<%response.sendRedirect("admin/questionsList"); %>
+<%response.sendRedirect("user/questionForm"); %>

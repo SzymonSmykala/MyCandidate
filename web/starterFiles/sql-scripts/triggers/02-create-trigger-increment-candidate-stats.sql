@@ -1,6 +1,6 @@
 DROP TRIGGER IF EXISTS incrementCandidatesStats;
 CREATE TRIGGER incrementCandidatesStats
-AFTER INSERT ON my_candidate.users
+BEFORE INSERT ON my_candidate.users
 FOR EACH ROW
   BEGIN
     INSERT INTO `candidates-stats`(date, numberOfNewCandidates) VALUES (DATE(NOW()),0)

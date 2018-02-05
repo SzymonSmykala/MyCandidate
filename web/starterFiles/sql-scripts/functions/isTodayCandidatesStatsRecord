@@ -1,6 +1,7 @@
 DROP FUNCTION IF EXISTS  isTodayCandidatesStatsRecord;
+DELIMITER ; ;
 CREATE FUNCTION isTodayCandidatesStatsRecord()
-  RETURNS INT
+  RETURNS INT DETERMINISTIC
   BEGIN
 
     CASE WHEN (SELECT COUNT(*)
@@ -11,5 +12,6 @@ CREATE FUNCTION isTodayCandidatesStatsRecord()
       RETURN 0;
     END CASE;
 
-
   END;
+
+DELIMITER ;

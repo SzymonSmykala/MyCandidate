@@ -1,0 +1,6 @@
+CREATE VIEW statistics
+  AS (
+    SELECT
+      DATE,
+      numberofanswers/(SELECT count(*)  FROM questions) as numberOFsurveys FROM stats
+  )

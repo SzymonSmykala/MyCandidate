@@ -1,0 +1,12 @@
+
+DROP PROCEDURE IF EXISTS get_premium_period_from_order;
+CREATE PROCEDURE get_premium_period_from_order(IN orderID INT, OUT days INT)
+  BEGIN
+
+    SET @d = (SELECT products.period FROM orders
+    INNER JOIN products ON products.product_id = orders.product_id
+      WHERE orders.order_id = orderID);
+    SET days = @d;
+
+  END;
+

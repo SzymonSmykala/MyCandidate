@@ -7,4 +7,5 @@
 <h2>Temp page</h2>
 ${firstRow.questionContent}
 </body>
+<%@ include file="parts/footer.jsp" %>
 </html>

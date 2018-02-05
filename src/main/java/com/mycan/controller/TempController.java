@@ -33,4 +33,10 @@ public class TempController {
         return "temp";
     }
 
+    @RequestMapping("/chart")
+    public String chart(){
+        return "chartStats";
+
+    }
+
 }

@@ -5,6 +5,8 @@ CREATE TABLE party_stats
   percent        INT         NOT NULL,
   CONSTRAINT parties_stats_parties_party_shorcut_fk
   FOREIGN KEY (party_shortcut) REFERENCES parties (party_shorcut)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
 );
 CREATE INDEX parties_stats_parties_party_shorcut_fk
   ON party_stats (party_shortcut);
